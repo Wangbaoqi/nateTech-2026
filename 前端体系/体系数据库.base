@@ -1,0 +1,10 @@
+views:
+  - type: cards
+    name: 视图
+    filters:
+      and:
+        - file.inFolder("前端体系")
+    image: file.file
+    cardSize: 140
+  - type: table
+    name: 表格
