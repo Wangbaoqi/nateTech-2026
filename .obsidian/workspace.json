@@ -232,7 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 210.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,13 +260,13 @@
   "active": "233d491427107275",
   "lastOpenFiles": [
     "前端体系/ECMAScript/底层原理/执行上下文.md",
-    "Rust体系/Rust体系脑图.md",
-    "前端体系/ECMAScript/Ecmascript标准规范.md",
-    "前端体系/前端体系脑图.md",
-    "README.md",
-    "GEMINI.md",
     "前端体系/体系看板.md",
     "前端体系/体系数据库.base",
+    "前端体系/前端体系脑图.md",
+    "前端体系/ECMAScript/Ecmascript标准规范.md",
+    "Rust体系/Rust体系脑图.md",
+    "README.md",
+    "GEMINI.md",
     "前端体系/ECMAScript/底层原理",
     "前端体系/ECMAScript",
     "TaskNotes/Views/kanban-default.base",
