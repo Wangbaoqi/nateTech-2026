@@ -10,20 +10,20 @@
           {
             "id": "97a23dad1078e362",
             "type": "tabs",
-            "dimension": 61.702127659574465,
+            "dimension": 76.52582159624414,
             "children": [
               {
                 "id": "233d491427107275",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
+                  "type": "split-diff-view",
                   "state": {
-                    "file": "前端体系/前端体系脑图.md",
-                    "mode": "source",
-                    "source": false
+                    "aFile": ".obsidian/workspace.json",
+                    "bFile": ".obsidian/workspace.json",
+                    "aRef": ""
                   },
-                  "icon": "lucide-file",
-                  "title": "前端体系脑图"
+                  "icon": "diff",
+                  "title": "Diff: workspace.json  (Working Tree)"
                 }
               }
             ]
@@ -31,7 +31,7 @@
           {
             "id": "de156d68e4ebe16b",
             "type": "tabs",
-            "dimension": 38.297872340425535,
+            "dimension": 23.474178403755868,
             "children": [
               {
                 "id": "35dff4f7da0c3d9f",
@@ -40,7 +40,7 @@
                   "type": "mindmap",
                   "state": {},
                   "icon": "dot-network",
-                  "title": "Mind Map of 前端体系脑图"
+                  "title": "Mind Map of Rust体系脑图"
                 }
               },
               {
@@ -270,16 +270,16 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "5e768c0612204980",
+  "active": "233d491427107275",
   "lastOpenFiles": [
+    "Rust体系/Rust体系脑图.md",
+    "前端体系/体系数据库.base",
+    "前端体系/体系看板.md",
     "前端体系/前端体系脑图.md",
     "前端体系/ECMAScript/Ecmascript标准规范.md",
     "README.md",
     "GEMINI.md",
-    "前端体系/体系看板.md",
     "前端体系/ECMAScript/底层原理/执行上下文.md",
-    "Rust体系/Rust体系脑图.md",
-    "前端体系/体系数据库.base",
     "前端体系/ECMAScript/底层原理",
     "前端体系/ECMAScript",
     "TaskNotes/Views/kanban-default.base",
