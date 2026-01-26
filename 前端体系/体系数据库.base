@@ -1,4 +1,15 @@
 views:
+  - type: tasknotesKanban
+    name: kanban
+    filters:
+      and:
+        - file.inFolder("前端体系/ECMAScript")
+    groupBy:
+      property: file.folder
+      direction: ASC
+    sort:
+      - property: file.basename
+        direction: ASC
   - type: cards
     name: 视图
     filters:

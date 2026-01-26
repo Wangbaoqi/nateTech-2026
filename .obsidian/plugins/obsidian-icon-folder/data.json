@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "🕵",
+      "LiEthernetPort",
+      "LiAirVent",
+      "LiBriefcase",
+      "LiDatabaseZap"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "前端体系": "LiFileBox",
+  "前端体系/ECMAScript": "LiFileCog",
+  "前端体系/前端体系脑图.md": "LiBrain",
+  "前端体系/体系看板.md": "LiSquareKanban",
+  "前端体系/体系数据库.base": "LiDatabaseZap",
+  "前端体系/ECMAScript/核心语言结构/概述.md": "LiBriefcase",
+  "Rust体系": "LiSquareKanban",
+  "AI体系": "LiAirVent",
+  "AI体系/研究报告.md": "LiEthernetPort",
+  "AI体系/AI工程师": "🕵"
+}
