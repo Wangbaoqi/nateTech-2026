@@ -144,7 +144,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "前端体系/前端体系脑图.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +153,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "前端体系脑图 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -208,9 +207,19 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "bba47856c3cc0c18",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       },
       {
         "id": "aea6322af2fcb433",
@@ -223,20 +232,19 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端体系/前端体系脑图.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "前端体系脑图 的大纲"
+              "title": "大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 319.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -262,12 +270,12 @@
       "obsidian-full-calendar:Open Full Calendar": false
     }
   },
-  "active": "233d491427107275",
+  "active": "5e768c0612204980",
   "lastOpenFiles": [
+    "前端体系/前端体系脑图.md",
     "前端体系/ECMAScript/Ecmascript标准规范.md",
     "README.md",
     "GEMINI.md",
-    "前端体系/前端体系脑图.md",
     "前端体系/体系看板.md",
     "前端体系/ECMAScript/底层原理/执行上下文.md",
     "Rust体系/Rust体系脑图.md",
