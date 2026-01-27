@@ -44,83 +44,80 @@ ES 标准定义了 8 种数据类型：
 *   **`var`**: 函数作用域，存在变量提升 (Hoisting)。
 *   **`let` / `const`**: 块级作用域 (Block Scope)，存在暂时性死区 (TDZ)。
 *   **词法环境 (Lexical Environment)**: 规范内部用于解析标识符引用的机制，由环境记录 (Environment Record) 和外部词法环境引用组成。
-
 ---
 
-## 第三章：执行机制 (Execution Mechanics)
+## 第三章 核心语言结构
 
-### 3.1 执行上下文 (Execution Contexts)
-每当代码运行时，都会创建执行上下文。
-*   **组成**:
-    1.  **Code Evaluation State**: 代码执行位置。
-    2.  **Function**: 当前执行的函数对象（如果是函数上下文）。
-    3.  **Realm**: 关联的全局环境（包含内置对象）。
-    4.  **ScriptOrModule**: 关联的脚本或模块。
-*   **执行栈 (Execution Context Stack)**: 也就是调用栈，管理上下文的推入和弹出。
+### 3.1 表达式(Expressions)
+- 标识符与主表达式
+- 左值与更新表达式
+- 算术与位运算符
+- 关系与相等运算符
+- 赋值与逗号运算符
+### 3.2 语句与声明 (Statements & Declarations)
+- 块与变量声明
+- 条件语句（if, switch）
+- 迭代语句 （for, while, do-while）
+- 控制流 （break, continue, return）
+- 错误处理（throw, try-catch）
+### 3.3 函数与类(Functions & Classes)
+- 函数定义与参数列表
+- 箭头函数
+- 生成器与异步函数
+- 类声明与静态块
 
-### 3.2 任务与微任务 (Jobs & Microtasks)
-*   **Script/Module 执行**: 宏任务。
-*   **PromiseJobs**: Promise 回调 (`.then`, `.catch`) 属于微任务，优先级高于新的宏任务。
-*   **Event Loop**: 规范定义了 Agent 循环执行任务的机制。
+## 第四章：标准库与内置对象 (Standard Library)
 
-### 3.3 原型链与继承 (Prototype Chain)
-*   **`[[Prototype]]`**: 每个对象都有一个内部属性指向其原型。
-*   **查找机制**: 访问属性时，若自身不存在，则沿着 `[[Prototype]]` 链向上查找，直到 `null`。
-*   **类 (Class)**: ES2015 引入的基于原型的语法糖。涵盖 `constructor`, `super`, `static` 方法, 私有字段 (`#field`)。
-
----
-
-## 第四章：函数与对象 (Functions & Objects)
-
-### 4.1 函数详解
-*   **函数声明 vs 表达式**: 提升行为不同。
-*   **箭头函数 (Arrow Functions)**: 词法 `this` 绑定，无 `arguments` 对象，不可作为构造函数。
-*   **生成器 (Generators)**: `function*`，可暂停执行 (`yield`)，返回迭代器。
-*   **异步函数 (Async/Await)**: 基于 Promise 和 Generator 的异步编程语法糖。
-
-### 4.2 对象模型
-*   **属性描述符 (Property Descriptors)**:
-    *   **Data Descriptor**: `value`, `writable`
-    *   **Accessor Descriptor**: `get`, `set`
-    *   **Shared**: `enumerable`, `configurable`
-*   **对象操作**: `Object.defineProperty`, `Object.keys`, `Object.assign`, `Object.freeze` 等。
-
----
-
-## 第五章：标准库与内置对象 (Standard Library)
-
-### 5.1 全局对象 (The Global Object)
+### 4.1 全局对象 (The Global Object)
 *   `globalThis` (ES2020): 统一的全局对象访问方式。
-
-### 5.2 基础对象
-*   **Array**: `map`, `filter`, `reduce`, `flatMap` (ES2019), `at` (ES2022), `toSorted/toSpliced` (ES2023)。
-*   **String**: `includes`, `startsWith`, `padEnd`, `matchAll` (ES2020), `replaceAll` (ES2021)。
-*   **Map / Set / WeakMap / WeakSet**: 键值对集合与弱引用集合。
-
-### 5.3 结构化数据
-*   **JSON**: `parse`, `stringify`。
-*   **ArrayBuffer / TypedArrays**: 处理二进制数据 (Int8Array, Float32Array 等)。
-
-### 5.4 控制抽象
+### 4.2 基础对象
+- **Object**
+- **Function**
+- **Boolean**
+- **Symbol**
+- **Error**
+### 4.3 数字日期对象
+- Number (& Float16Array)
+- BigInt
+- Math
+- Date
+### 4.4 文本对象
+- String
+- RegExp（含 escape 万法）
+### 4.5 集合对象
+*  **Array**: `map`, `filter`, `reduce`, `flatMap` (ES2019), `at` (ES2022), `toSorted/toSpliced` (ES2023)。
+*  **TypedArray**。
+*  **Map / Set**: 键值对集合。
+*  **WeakMap / WeakSe**t: 弱引用集合。
+### 4.6 结构化数据
+*  **JSON**: `parse`, `stringify`。
+*  **ArrayBuffer / SharedArrayBuffer**。
+*  **DataView**
+*  **Atomics**
+### 4.7 控制抽象
 *   **Promise**: `all`, `race`, `allSettled` (ES2020), `any` (ES2021), `withResolvers` (ES2024)。
 *   **Iterator & Iterable**: `Symbol.iterator` 协议，`for...of` 循环。
+### 4.8 Reflection
+- **Reflect Object**
+- **Proxy Object**
+- **Module namespace Object**
+
+## 第五章：执行机制 (Execution Mechanics)
+
+### 5.1 内存模型(Memory Model)
+- 
+### 5.2 执行上下文 (Execution Contexts)
+* **领域(Realms)**
+* **环境记录 (Environment Records)**
+* **作业 (Jobs)与回调**。
+### 5.3 模块系统 (Modules)
+* **模块记录与加载**
+* **导入属性 (Import Attributes)**
+* **JSON模块支持**
 
 ---
 
-## 第六章：模块系统 (Modules)
-
-### 6.1 ESM (ECMAScript Modules)
-*   **语法**: `import ... from ...`, `export ...`。
-*   **特性**:
-    *   **静态解析**: 编译时确定依赖关系。
-    *   **自动严格模式**: 默认启用 `'use strict'`。
-    *   **单例执行**: 模块只执行一次。
-*   **动态导入**: `import()` 返回 Promise，支持运行时按需加载。
-*   **Import Attributes** (ES2025?): `import json from "./data.json" with { type: "json" }`。
-
----
-
-## 第七章：年度关键特性演进 (Evolution by Year)
+## 第六章：年度关键特性演进 (Evolution by Year)
 
 ### ES2015 (ES6) - 里程碑
 *   Let/Const, Arrow Functions, Classes, Modules, Promises, Map/Set, Destructuring, Template Literals.
@@ -140,16 +137,23 @@ ES 标准定义了 8 种数据类型：
 *   **Array by Copy**: `toReversed`, `toSorted`, `toSpliced`, `with`. (不改变原数组的操作)
 *   **Hashbang Grammar**: `#!/usr/bin/env node`。
 
-### ES2024 (Latest Features)
+### ES2024 
 *   **Object.groupBy / Map.groupBy**: 原生数据分组能力。
 *   **Promise.withResolvers**: 简化 Promise 创建 (`const { promise, resolve, reject } = Promise.withResolvers();`)。
 *   **RegExp v flag**: 增强的 Unicode 集合支持。
 *   **Atomics.waitAsync**: 异步等待共享内存。
 *   **ArrayBuffer.prototype.resize / transfer**: 可变大小的 ArrayBuffer。
+### ES2025
+- **Iterator 全局对象及其方法**
+- **`Set.prototype`** 新集合操作方法
+- **JSON 模块导入语法**
+- **`RegExp.escape`** 与内联修饰符
+- **`Promise.try** `方法
+- **Float16Array 与相关 Math/DataView 支持**
 
 ---
 
-## 第八章：如何阅读规范原文
+## 第七章：如何阅读规范原文
 1.  **理解符号**:
     *   `?` / `!` 后缀: 简写的 ReturnIfAbrupt 操作（处理异常）。
     *   `[[InternalSlot]]`: 内部槽位，JS 代码无法直接访问，定义对象状态。
