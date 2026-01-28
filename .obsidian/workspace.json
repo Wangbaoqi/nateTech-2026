@@ -6,7 +6,7 @@
       {
         "id": "97a23dad1078e362",
         "type": "tabs",
-        "dimension": 66.1876584953508,
+        "dimension": 73.40930674264007,
         "children": [
           {
             "id": "233d491427107275",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
+                "file": "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction"
+              "title": "Clawdbot"
             }
           },
           {
@@ -51,7 +51,7 @@
       {
         "id": "4249ff4ae72ae441",
         "type": "tabs",
-        "dimension": 33.8123415046492,
+        "dimension": 26.59069325735992,
         "children": [
           {
             "id": "fab7973623d0e45f",
@@ -124,7 +124,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 293.5
   },
   "right": {
     "id": "6a986f50290d39fd",
@@ -254,13 +254,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
+                "file": "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Introduction 的大纲"
+              "title": "Clawdbot 的大纲"
             }
           }
         ]
@@ -288,13 +288,15 @@
       "tasknotes:Open kanban board": false,
       "tasknotes:Open pomodoro": false,
       "tasknotes:Open pomodoro stats": false,
-      "tasknotes:Create new task": false,
-      "obsidian-full-calendar:Open Full Calendar": false
+      "tasknotes:Create new task": false
     }
   },
-  "active": "b4eeedeb3b89b049",
+  "active": "233d491427107275",
   "lastOpenFiles": [
+    "Python 体系/PYTHON_FOR_JS_DEVS.md",
     "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
+    "Python 体系",
+    "Python体系",
     "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png",
     "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Examples.md",
     "AI体系/AI工程师/AI驱动开发实践/Assets",
@@ -317,8 +319,6 @@
     "TaskNotes/Views/tasks-default.base",
     "未命名看板.md",
     "TaskNotes/Views/mini-calendar-default.base",
-    "TaskNotes/Views/kanban-default.base",
-    "TaskNotes/Views/agenda-default.base",
     "TaskNotes/Tasks/LLMs and How They Work.md",
     "2026-01-27.md",
     "AI体系/AI工程师/AI驱动开发实践/Vibe Coding（氛围编码）.md",
