@@ -44,6 +44,9 @@ formulas:
 views:
   - type: tasknotesCalendar
     name: Calendar
+    filters:
+      and:
+        - file.inFolder("/")
     order:
       - status
       - priority
