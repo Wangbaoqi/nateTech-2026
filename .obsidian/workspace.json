@@ -4,63 +4,69 @@
     "type": "split",
     "children": [
       {
-        "id": "de156d68e4ebe16b",
+        "id": "97a23dad1078e362",
         "type": "tabs",
+        "dimension": 73.40930674264007,
         "children": [
           {
-            "id": "35dff4f7da0c3d9f",
+            "id": "233d491427107275",
             "type": "leaf",
             "state": {
-              "type": "mindmap",
-              "state": {},
-              "icon": "dot-network",
-              "title": "Mind Map of Introduction"
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/kanban-default.base",
+                "viewName": "Kanban Board"
+              },
+              "icon": "tasknotes-simple",
+              "title": "kanban-default"
             }
           },
           {
-            "id": "1b8e147560bff03c",
+            "id": "5f9fc32b10302a7f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Rust体系/Rust体系脑图.md",
-                "mode": "source",
-                "source": false
+                "file": "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png"
               },
-              "icon": "lucide-file",
-              "title": "Rust体系脑图"
+              "icon": "lucide-image",
+              "title": "introduction-tokenizer"
             }
           },
           {
-            "id": "271968f3100846bc",
+            "id": "6b4587a40a2c4811",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
-                "mode": "source",
-                "source": false
+                "file": "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png"
               },
-              "icon": "lucide-file",
-              "title": "Clawdbot"
-            }
-          },
-          {
-            "id": "3f2dd177e5f025f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Introduction"
+              "icon": "lucide-image",
+              "title": "introduction-tokenizer"
             }
           }
-        ],
-        "currentTab": 3
+        ]
+      },
+      {
+        "id": "4249ff4ae72ae441",
+        "type": "tabs",
+        "dimension": 26.590693257359924,
+        "children": [
+          {
+            "id": "fab7973623d0e45f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI体系/AI工程师/AI驱动开发实践/AI Models/Gemini.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Gemini"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#task",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,11 +123,7 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-    "width": 293.5
-=======
-    "width": 272.5
->>>>>>> 03ab449aa88fd7c8d188c9eac7b431c038bcb8d3
+    "width": 282.5
   },
   "right": {
     "id": "6a986f50290d39fd",
@@ -133,7 +135,7 @@
         "dimension": 53.13351498637602,
         "children": [
           {
-            "id": "5e768c0612204980",
+            "id": "8bdc0d4ca1ea82f5",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -148,6 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +160,20 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "Introduction 的反向链接列表"
+            }
+          },
+          {
+            "id": "5e768c0612204980",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "TaskNotes/Views/relationships.base",
+                "viewName": "Subtasks"
+              },
+              "icon": "tasknotes-simple",
+              "title": "relationships"
             }
           },
           {
@@ -166,11 +182,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "Introduction 的出链列表"
             }
           },
           {
@@ -213,7 +230,7 @@
             }
           },
           {
-            "id": "bba47856c3cc0c18",
+            "id": "b4eeedeb3b89b049",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -223,7 +240,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       },
       {
         "id": "aea6322af2fcb433",
@@ -236,28 +253,20 @@
             "state": {
               "type": "outline",
               "state": {
-<<<<<<< HEAD
-                "file": "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
-=======
-                "file": "conflict-files-obsidian-git.md",
->>>>>>> 03ab449aa88fd7c8d188c9eac7b431c038bcb8d3
+                "file": "TaskNotes/Views/kanban-default.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-<<<<<<< HEAD
-              "title": "Clawdbot 的大纲"
-=======
-              "title": "conflict-files-obsidian-git 的大纲"
->>>>>>> 03ab449aa88fd7c8d188c9eac7b431c038bcb8d3
+              "title": "kanban-default 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 498.5
+    "width": 409.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -271,7 +280,6 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:创建新看板": false,
-      "terminal:Open terminal": false,
       "tasknotes:Open mini calendar": false,
       "tasknotes:Open advanced calendar": false,
       "tasknotes:Open task list": false,
@@ -282,75 +290,43 @@
       "tasknotes:Create new task": false
     }
   },
-<<<<<<< HEAD
   "active": "233d491427107275",
   "lastOpenFiles": [
+    "TaskNotes/Tasks/Day1_ReAct_Agent实战.md",
+    "codeSnippet/day1_agent.py",
+    "codeSnippet",
+    "TaskNotes/Tasks/LLMs and How They Work.md",
+    "TaskNotes/Views/calendar-default.base",
+    "TaskNotes/Views/kanban-default.base",
+    "TaskNotes/Views/agenda-default.base",
+    "AI体系/02_提示工程/01_ReAct_从零手写Agent.md",
+    "TaskNotes/Views/mini-calendar-default.base",
+    "未命名看板.md",
+    "AI体系/AI工程师/AI工程师进化指南.md",
+    "AI体系/AI学习路线图.md",
+    "AI体系/研究报告.md",
+    "TaskNotes/Views/tasks-default.base",
+    "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png",
+    "AI体系/06_实战案例库",
+    "AI体系/05_Agent架构",
+    "AI体系/04_技能开发_Skills",
+    "AI体系/AI工程师/AI驱动开发实践/AI编程助手.md",
+    "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
     "Python 体系/PYTHON_FOR_JS_DEVS.md",
     "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
-    "Python 体系",
-    "Python体系",
-    "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png",
     "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Examples.md",
-    "AI体系/AI工程师/AI驱动开发实践/Assets",
     "Excalidraw/Drawing 2026-01-27 17.05.54.excalidraw.md",
     "Excalidraw/Drawing 2026-01-27 17.04.35.excalidraw.md",
     "Excalidraw/Drawing 2026-01-27 17.00.30.excalidraw.md",
-    "Excalidraw",
     "AI体系/AI工程师/AI驱动开发实践/AI Models/Gemini.md",
-    "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
-    "AI体系/研究报告.md",
-    "AI体系/AI工程师/AI工程师进化指南.md",
     "AI体系/AI工程师/AI驱动开发实践/未命名.md",
-    "AI体系/AI工程师/AI驱动开发实践/AI Models",
-    "AI体系/Gemini",
-    "AI体系/AI工程师/AI驱动开发实践/AI编程助手.md",
-    "AI体系/AI工程师/AI驱动开发实践/AI Tools",
-    "TaskNotes/Views/calendar-default.base",
     "未命名看板 2.md",
     "未命名看板 1.md",
-    "TaskNotes/Views/tasks-default.base",
-    "未命名看板.md",
-    "TaskNotes/Views/mini-calendar-default.base",
-=======
-  "active": "bba47856c3cc0c18",
-  "lastOpenFiles": [
->>>>>>> 03ab449aa88fd7c8d188c9eac7b431c038bcb8d3
-    "TaskNotes/Tasks/LLMs and How They Work.md",
-    "TaskNotes/Tasks",
-    "Excalidraw/Drawing 2026-01-27 17.05.54.excalidraw.md",
-    "Excalidraw",
-    "AI体系/AI工程师/AI驱动开发实践/未命名.md",
-    "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Examples.md",
-    "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png",
-    "AI体系/AI工程师/AI驱动开发实践/Assets",
-    "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
-    "AI体系/AI工程师/AI驱动开发实践/AI Tools",
-    "AI体系/AI工程师/AI驱动开发实践/AI Models/Gemini.md",
-    "AI体系/AI工程师/AI驱动开发实践/AI Models",
-    "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
-    "AI体系/AI工程师/AI驱动开发实践/AI编程助手.md",
+    "2026-01-27.md",
     "AI体系/AI工程师/AI驱动开发实践/Vibe Coding（氛围编码）.md",
-    "conflict-files-obsidian-git.md",
-    "Rust体系/Rust体系脑图.md",
-    "前端体系/ECMAScript/核心语言结构/语句与声明.md",
-    "前端体系/ECMAScript/核心语言结构/表达式.md",
-    "前端体系/ECMAScript/核心语言结构/概述.md",
-    "前端体系/ECMAScript/核心语言结构/函数与类.md",
-    "前端体系/ECMAScript/核心语言结构",
-    "前端体系/ECMAScript/核心语法语义.md",
-    "AI体系/AI工程师/AI驱动开发实践/Prompt工程",
-    "AI体系/AI工程师/AI驱动开发实践",
-    "AI体系/AI工程师/AI工程师进化指南.md",
-    "AI体系/研究报告.md",
-    "AI体系/AI工程师",
-    "AI体系",
-    "前端体系/体系看板.md",
-    "前端体系/前端体系脑图.md",
-    "前端体系/ECMAScript/Ecmascript标准规范.md",
-    "README.md",
+    "AI体系/AI工程师/AI驱动开发实践/prompt roadmap.md",
     "GEMINI.md",
-    "前端体系/ECMAScript/底层原理/执行上下文.md",
-    "未命名.md",
-    "Excalidraw/Drawing 2026-01-21 14.11.53.excalidraw.md"
+    "README.md",
+    "Rust体系/Rust体系脑图.md"
   ]
 }
