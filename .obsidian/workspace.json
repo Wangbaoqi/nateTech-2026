@@ -4,24 +4,63 @@
     "type": "split",
     "children": [
       {
-        "id": "97a23dad1078e362",
+        "id": "de156d68e4ebe16b",
         "type": "tabs",
         "children": [
           {
-            "id": "6b4587a40a2c4811",
+            "id": "35dff4f7da0c3d9f",
+            "type": "leaf",
+            "state": {
+              "type": "mindmap",
+              "state": {},
+              "icon": "dot-network",
+              "title": "Mind Map of Introduction"
+            }
+          },
+          {
+            "id": "1b8e147560bff03c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI体系/03_协议与标准_MCP/01_Function_Calling_原理与实战.md",
+                "file": "Rust体系/Rust体系脑图.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Function_Calling_原理与实战"
+              "title": "Rust体系脑图"
+            }
+          },
+          {
+            "id": "271968f3100846bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction"
+            }
+          },
+          {
+            "id": "3f2dd177e5f025f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Examples.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Examples"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -53,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#task",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 291.5
+    "width": 272.5
   },
   "right": {
     "id": "6a986f50290d39fd",
@@ -90,7 +129,7 @@
         "dimension": 53.13351498637602,
         "children": [
           {
-            "id": "8bdc0d4ca1ea82f5",
+            "id": "5e768c0612204980",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -105,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
+                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Examples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,20 +154,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Introduction 的反向链接列表"
-            }
-          },
-          {
-            "id": "5e768c0612204980",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "TaskNotes/Views/relationships.base",
-                "viewName": "Subtasks"
-              },
-              "icon": "tasknotes-simple",
-              "title": "relationships"
+              "title": "Examples 的反向链接列表"
             }
           },
           {
@@ -137,12 +163,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Introduction 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -185,7 +210,7 @@
             }
           },
           {
-            "id": "b4eeedeb3b89b049",
+            "id": "bba47856c3cc0c18",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -195,7 +220,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       },
       {
         "id": "aea6322af2fcb433",
@@ -208,20 +233,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI体系/03_协议与标准_MCP/01_Function_Calling_原理与实战.md",
+                "file": "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Examples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "01_Function_Calling_原理与实战 的大纲"
+              "title": "Examples 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 409.5
+    "width": 498.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -235,6 +260,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:创建新看板": false,
+      "terminal:Open terminal": false,
       "tasknotes:Open mini calendar": false,
       "tasknotes:Open advanced calendar": false,
       "tasknotes:Open task list": false,
@@ -242,7 +268,8 @@
       "tasknotes:Open kanban board": false,
       "tasknotes:Open pomodoro": false,
       "tasknotes:Open pomodoro stats": false,
-      "tasknotes:Create new task": false
+      "tasknotes:Create new task": false,
+      "obsidian-full-calendar:Open Full Calendar": false
     }
   },
   "active": "6b4587a40a2c4811",
@@ -277,6 +304,10 @@
     "AI体系/AI工程师/AI驱动开发实践/AI编程助手.md",
     "AI体系/AI工程师/AI驱动开发实践/AI Tools/Clawdbot.md",
     "Python 体系/PYTHON_FOR_JS_DEVS.md",
+    "Python 体系",
+    "AI体系/AI学习路线图.md",
+    "AI体系/02_提示工程/01_ReAct_从零手写Agent.md",
+    "AI体系/02_提示工程",
     "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Introduction.md",
     "AI体系/AI工程师/AI驱动开发实践/Prompt工程/Examples.md",
     "Excalidraw/Drawing 2026-01-27 17.04.35.excalidraw.md",
