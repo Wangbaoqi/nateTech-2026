@@ -7,8 +7,7 @@ tags:
   - Agent
   - ReAct
   - Python
-  - task
-  - task
+  - tasks
 due: 2026-01-29
 dateModified: 2026-01-30T15:08:20.413+08:00
 completedDate: 2026-01-30

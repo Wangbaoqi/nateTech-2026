@@ -7,7 +7,7 @@ tags:
   - Agent
   - FunctionCalling
   - Python
-  - task
+  - tasks
 due: 2026-01-30
 ---
 
