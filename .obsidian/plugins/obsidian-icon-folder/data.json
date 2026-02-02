@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiStore",
-      "LiProjector",
-      "LiInbox",
-      "LiAreaChart",
-      "LiArchive"
+      "LiCodeSquare",
+      "LiCode",
+      "🕵",
+      "LiEthernetPort",
+      "LiAirVent"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -33,10 +33,5 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  },
-  "Archives": "LiArchive",
-  "Areas": "LiAreaChart",
-  "Inbox": "LiInbox",
-  "Projects": "LiProjector",
-  "Resources": "LiStore"
+  }
 }

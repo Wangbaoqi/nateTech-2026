@@ -8,54 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "35dff4f7da0c3d9f",
-            "type": "leaf",
-            "state": {
-              "type": "mindmap",
-              "state": {},
-              "icon": "dot-network",
-              "title": "Mind Map of Introduction"
-            }
-          },
-          {
-            "id": "1b8e147560bff03c",
-            "type": "leaf",
-            "state": {
-              "type": "bases",
-              "state": {
-                "file": "Resources/Task-Views/kanban-default.base",
-                "viewName": "Kanban Board"
-              },
-              "icon": "tasknotes-simple",
-              "title": "kanban-default"
-            }
-          },
-          {
-            "id": "7005690b0e78b9ae",
-            "type": "leaf",
-            "state": {
-              "type": "tasknotes-pomodoro-stats-view",
-              "state": {},
-              "icon": "bar-chart",
-              "title": "番茄钟统计"
-            }
-          },
-          {
-            "id": "a4d12de7283cefa6",
+            "id": "3f2dd177e5f025f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
+                "file": "Projects/AI-System-Study/01_LLM_Foundations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenClaw_User_Guide"
+              "title": "01_LLM_Foundations"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 269.5
+    "width": 280.5
   },
   "right": {
     "id": "6a986f50290d39fd",
@@ -228,20 +194,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
+                "file": "Projects/AI-System-Study/01_LLM_Foundations.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "OpenClaw_User_Guide 的大纲"
+              "title": "01_LLM_Foundations 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 545.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -265,50 +231,50 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "a4d12de7283cefa6",
+  "active": "3f2dd177e5f025f3",
   "lastOpenFiles": [
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Transformer架构.md",
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Tokenization原理.md",
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Prompt_Engineering_Guide.md",
-    "Projects/AI-System-Study/01_LLM_Foundations.md",
-    "Areas/AI体系/AICode/01_Foundations/01_self_attention.py",
-    "Areas/AI体系/AICode/all_requirements.txt",
-    "Areas/AI体系/AI应用工程师/AI_Engineer_2026_Curriculum.md",
-    "Areas/AI体系/AI应用工程师/AI学习路线图.md",
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/README.md",
-    "Resources/Task-Views/calendar-default.base",
+    "AI体系/04_技能开发/01_Function_Calling_原理与实战.md",
+    "Resources/Excalidraw/Scripts/Downloaded/Slideshow.svg",
+    "Resources/Excalidraw/Scripts/Downloaded/Slideshow.md",
+    "Resources/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
+    "Resources/Excalidraw/Scripts/Downloaded/Mindmap format.md",
+    "Resources/Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
+    "Resources/Excalidraw/Scripts/Downloaded/Mindmap Builder.md",
+    "Resources/Excalidraw/Scripts/Downloaded",
+    "Resources/codeSnippet/day2_function_calling.py",
+    "Resources/codeSnippet/day1_agent.py",
+    "Resources/Task-Views/tasks-default.base",
+    "Resources/Task-Views/relationships.base",
     "Resources/Task-Views/mini-calendar-default.base",
-    "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
-    "Areas/AI体系/AICode/01_Foundations/README.md",
-    "Areas/AI体系/AI编程助手.md",
-    "Areas/AI体系/AICode/05_EvalOps/eval_ragas.py",
-    "Areas/AI体系/AICode/05_EvalOps/requirements.txt",
-    "Areas/AI体系/AICode/05_EvalOps/README.md",
-    "Areas/AI体系/AICode/04_FineTuning/train_lora.py",
-    "Areas/AI体系/AICode/04_FineTuning/requirements.txt",
-    "Areas/AI体系/AICode/04_FineTuning/README.md",
-    "Areas/AI体系/AICode/03_Agent/mcp_server.py",
-    "Areas/AI体系/AICode/03_Agent/react_loop.py",
-    "Areas/AI体系/AICode/03_Agent/README.md",
-    "Areas/AI体系/AICode/02_RAG/README.md",
+    "Resources/Task-Views/kanban-default.base",
+    "Resources/Task-Views/calendar-default.base",
+    "Resources/Task-Views/agenda-default.base",
+    "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
+    "Resources/Excalidraw/Scripts",
+    "Resources/Excalidraw/Drawing 2026-01-27 17.05.54.excalidraw.md",
     "Projects/AI-System-Study/05_Eval_Ops.md",
     "Projects/AI-System-Study/04_Fine_Tuning.md",
     "Projects/AI-System-Study/03_Agentic_Design.md",
     "Projects/AI-System-Study/02_RAG_Engineering.md",
-    "Areas/AI体系/AI应用工程师/03_智能体与协议/01_ReAct_从零手写Agent.md",
-    "Areas/AI体系/AI应用工程师/03_协议与标准_MCP/01_Function_Calling_原理与实战.md",
-    "Areas/AI体系/AI应用工程师/04_技能开发/README.md",
-    "Areas/AI体系/AI应用工程师/01_底层原理/README.md",
-    "Areas/AI体系/AI应用工程师/05_评估与运维/LLMOps_Trace.md",
+    "Projects/AI-System-Study/01_LLM_Foundations.md",
+    "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
+    "Inbox/GEMINI.md",
+    "Home.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/语句与声明.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/表达式.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/概述.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
+    "Areas/AI体系/AI应用工程师/06_实战案例库/README.md",
     "Areas/AI体系/AI应用工程师/05_评估与运维/Ragas_Metrics.md",
     "Areas/AI体系/AI应用工程师/05_评估与运维/README.md",
-    "Areas/AI体系/AI应用工程师/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png",
-    "Resources/Excalidraw/Scripts/Downloaded/Slideshow.svg",
-    "Resources/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
-    "Resources/Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
-    "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png",
-    "Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
+    "Areas/AI体系/AI应用工程师/05_评估与运维/LLMOps_Trace.md",
+    "Areas/AI体系/AI应用工程师/04_微调与部署/README.md",
+    "Areas/AI体系/AI应用工程师/04_微调与部署/Quantization_GGUF.md",
+    "Areas/AI体系/AI应用工程师/04_微调与部署/PEFT_LoRA.md",
+    "Areas/AI体系/AI应用工程师/03_智能体与协议/ReAct_Pattern.md",
+    "Excalidraw/Scripts/Downloaded/Slideshow.svg",
     "Excalidraw/Scripts/Downloaded/Mindmap format.svg",
-    "Excalidraw/Scripts/Downloaded/Slideshow.svg"
+    "Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
+    "AI体系/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png"
   ]
 }
