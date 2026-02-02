@@ -1,0 +1,16 @@
+transformers
+torch
+numpy
+langchain
+chromadb
+openai
+tiktoken
+mcp
+requests
+pydantic
+unsloth
+peft
+bitsandbytes
+ragas
+langsmith
+pandas

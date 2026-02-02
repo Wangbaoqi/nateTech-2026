@@ -1,7 +1,7 @@
 {
-  "tasksFolder": "TaskNotes/Tasks",
-  "moveArchivedTasks": false,
-  "archiveFolder": "TaskNotes/Archive",
+  "tasksFolder": "Inbox",
+  "moveArchivedTasks": true,
+  "archiveFolder": "Archives/Tasks",
   "taskTag": "task",
   "taskIdentificationMethod": "tag",
   "hideIdentifyingTagsInCards": false,
@@ -121,7 +121,7 @@
     "propertyKey": "",
     "propertyValue": ""
   },
-  "inlineTaskConvertFolder": "{{currentNotePath}}",
+  "inlineTaskConvertFolder": "Inbox",
   "disableNoteIndexing": false,
   "suggestionDebounceMs": 0,
   "fieldMapping": {
@@ -274,12 +274,12 @@
   "enableBases": true,
   "autoCreateDefaultBasesFiles": true,
   "commandFileMapping": {
-    "open-calendar-view": "TaskNotes/Views/mini-calendar-default.base",
-    "open-kanban-view": "TaskNotes/Views/kanban-default.base",
-    "open-tasks-view": "TaskNotes/Views/tasks-default.base",
-    "open-advanced-calendar-view": "TaskNotes/Views/calendar-default.base",
-    "open-agenda-view": "TaskNotes/Views/agenda-default.base",
-    "relationships": "TaskNotes/Views/relationships.base"
+    "open-calendar-view": "Resources/Task-Views/mini-calendar-default.base",
+    "open-kanban-view": "Resources/Task-Views/kanban-default.base",
+    "open-tasks-view": "Resources/Task-Views/tasks-default.base",
+    "open-advanced-calendar-view": "Resources/Task-Views/calendar-default.base",
+    "open-agenda-view": "Resources/Task-Views/agenda-default.base",
+    "relationships": "Resources/Task-Views/relationships.base"
   },
   "maintainDueDateOffsetInRecurring": false,
   "useFrontmatterMarkdownLinks": false,

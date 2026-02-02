@@ -35,3 +35,7 @@ share/python-wheels/
 # IDEs
 .idea/
 .vscode/
+.venv/
+Areas/AI体系/AICode/.venv/
+__pycache__/
+.DS_Store
