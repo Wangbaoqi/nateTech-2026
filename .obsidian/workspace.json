@@ -36,8 +36,8 @@
             "state": {
               "type": "tasknotes-pomodoro-stats-view",
               "state": {},
-              "icon": "bar-chart",
-              "title": "番茄钟统计"
+              "icon": "lucide-ghost",
+              "title": "tasknotes-pomodoro-stats-view"
             }
           },
           {
@@ -46,12 +46,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
+                "file": "Projects/Polymarket-Trading/Crypto_15m_Strategy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OpenClaw_User_Guide"
+              "title": "Crypto_15m_Strategy"
             }
           }
         ],
@@ -228,13 +228,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
+                "file": "Projects/Polymarket-Trading/Crypto_15m_Strategy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "OpenClaw_User_Guide 的大纲"
+              "title": "Crypto_15m_Strategy 的大纲"
             }
           }
         ]
@@ -265,43 +265,46 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "a4d12de7283cefa6",
+  "active": "c1f3a71f2d8a34f8",
   "lastOpenFiles": [
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Transformer架构.md",
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Tokenization原理.md",
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Prompt_Engineering_Guide.md",
-    "Projects/AI-System-Study/01_LLM_Foundations.md",
-    "Areas/AI体系/AICode/01_Foundations/01_self_attention.py",
-    "Areas/AI体系/AICode/all_requirements.txt",
-    "Areas/AI体系/AI应用工程师/AI_Engineer_2026_Curriculum.md",
-    "Areas/AI体系/AI应用工程师/AI学习路线图.md",
-    "Areas/AI体系/AI应用工程师/01_基础与提示工程/README.md",
-    "Resources/Task-Views/calendar-default.base",
-    "Resources/Task-Views/mini-calendar-default.base",
-    "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
-    "Areas/AI体系/AICode/01_Foundations/README.md",
-    "Areas/AI体系/AI编程助手.md",
-    "Areas/AI体系/AICode/05_EvalOps/eval_ragas.py",
-    "Areas/AI体系/AICode/05_EvalOps/requirements.txt",
-    "Areas/AI体系/AICode/05_EvalOps/README.md",
-    "Areas/AI体系/AICode/04_FineTuning/train_lora.py",
-    "Areas/AI体系/AICode/04_FineTuning/requirements.txt",
-    "Areas/AI体系/AICode/04_FineTuning/README.md",
-    "Areas/AI体系/AICode/03_Agent/mcp_server.py",
-    "Areas/AI体系/AICode/03_Agent/react_loop.py",
-    "Areas/AI体系/AICode/03_Agent/README.md",
-    "Areas/AI体系/AICode/02_RAG/README.md",
-    "Projects/AI-System-Study/05_Eval_Ops.md",
-    "Projects/AI-System-Study/04_Fine_Tuning.md",
-    "Projects/AI-System-Study/03_Agentic_Design.md",
-    "Projects/AI-System-Study/02_RAG_Engineering.md",
-    "Areas/AI体系/AI应用工程师/03_智能体与协议/01_ReAct_从零手写Agent.md",
-    "Areas/AI体系/AI应用工程师/03_协议与标准_MCP/01_Function_Calling_原理与实战.md",
-    "Areas/AI体系/AI应用工程师/04_技能开发/README.md",
-    "Areas/AI体系/AI应用工程师/01_底层原理/README.md",
-    "Areas/AI体系/AI应用工程师/05_评估与运维/LLMOps_Trace.md",
-    "Areas/AI体系/AI应用工程师/05_评估与运维/Ragas_Metrics.md",
-    "Areas/AI体系/AI应用工程师/05_评估与运维/README.md",
+    "Projects/Polymarket-Trading/data/markets.json",
+    "Projects/Polymarket-Trading/data",
+    "Projects/Polymarket-Trading/src/fetch_graphql.js",
+    "Projects/Polymarket-Trading/scripts/test_env.js",
+    "Projects/Polymarket-Trading/node_modules/viem/index.ts",
+    "Projects/Polymarket-Trading/node_modules/viem/types/withdrawal.ts",
+    "Projects/Polymarket-Trading/node_modules/viem/types/window.ts",
+    "Projects/Polymarket-Trading/node_modules/viem/types/utils.ts",
+    "Projects/Polymarket-Trading/node_modules/viem/types/typedData.ts",
+    "Projects/Polymarket-Trading/node_modules/viem/types/transport.ts",
+    "Projects/Polymarket-Trading/node_modules/viem/types/transaction.ts",
+    "Projects/Polymarket-Trading/node_modules/viem/README.md",
+    "Projects/Polymarket-Trading/node_modules/viem/CHANGELOG.md",
+    "Projects/Polymarket-Trading/node_modules/ox/README.md",
+    "Projects/Polymarket-Trading/node_modules/ox/CHANGELOG.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/order-utils/dist/README.md",
+    "Projects/Polymarket-Trading/node_modules/abitype/README.md",
+    "Projects/Polymarket-Trading/node_modules/@noble/ciphers/README.md",
+    "Projects/Polymarket-Trading/node_modules/@adraffy/ens-normalize/README.md",
+    "Projects/Polymarket-Trading/node_modules/isows/README.md",
+    "Projects/Polymarket-Trading/node_modules/isows/CHANGELOG.md",
+    "Projects/Polymarket-Trading/node_modules/eventemitter3/README.md",
+    "Projects/Polymarket-Trading/node_modules/viem/node_modules/ws/README.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/lib/core/README.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/lib/helpers/README.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/lib/env/README.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/lib/adapters/README.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/UPGRADE_GUIDE.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/SECURITY.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/README.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/node_modules/axios/CHANGELOG.md",
+    "Projects/Polymarket-Trading/node_modules/@ethersproject/signing-key/node_modules/bn.js/README.md",
+    "Projects/Polymarket-Trading/node_modules/@ethersproject/bignumber/node_modules/bn.js/README.md",
+    "Projects/Polymarket-Trading/node_modules/axios/lib/helpers/README.md",
+    "Projects/Polymarket-Trading/node_modules/axios/lib/env/README.md",
+    "Projects/Polymarket-Trading/node_modules/axios/lib/core/README.md",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/order-utils/coverage/sort-arrow-sprite.png",
+    "Projects/Polymarket-Trading/node_modules/@polymarket/order-utils/coverage/favicon.png",
     "Areas/AI体系/AI应用工程师/AI工程师/AI驱动开发实践/Assets/introduction-tokenizer.png",
     "Resources/Excalidraw/Scripts/Downloaded/Slideshow.svg",
     "Resources/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
