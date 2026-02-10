@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Polymarket-Trading/data/MARKET_STRUCTURE_EXPLAINED.md",
+                "file": "Projects/Polymarket-Trading/Weather Predict Data.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +131,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "MARKET_STRUCTURE_EXPLAINED 的反向链接列表"
+              "title": "Weather Predict Data 的反向链接列表"
             }
           },
           {
@@ -201,13 +201,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "bac51d5b3c17ff83",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 441.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -231,7 +241,7 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "c2154365ad711fa3",
+  "active": "75dc73c65fd6c0d2",
   "lastOpenFiles": [
     "Resources/Excalidraw/Drawing 2026-02-09 14.36.46.excalidraw.md",
     "Projects/Polymarket-Trading/Weather Predict Data.md",
