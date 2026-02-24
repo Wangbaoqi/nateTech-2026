@@ -47,6 +47,7 @@
     "defaultShowICSEvents": true,
     "enableTimeblocking": false,
     "defaultShowTimeblocks": true,
+    "defaultTimeblockColor": "#6366f1",
     "nowIndicator": true,
     "selectMirror": true,
     "weekNumbers": false,
@@ -311,7 +312,7 @@
     "includeObsidianLink": true,
     "defaultReminderMinutes": null
   },
-  "lastSeenVersion": "4.3.0",
+  "lastSeenVersion": "4.4.0",
   "modalFieldsConfig": {
     "version": 1,
     "fields": [
@@ -444,5 +445,13 @@
         "defaultCollapsed": false
       }
     ]
-  }
+  },
+  "pomodoroState": {
+    "isRunning": false,
+    "timeRemaining": 1500
+  },
+  "lastPomodoroDate": "2026-02-23",
+  "enableMCP": false,
+  "enableMdbaseSpec": false,
+  "resetCheckboxesOnRecurrence": false
 }

@@ -13,42 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Polymarket-Trading/data/MARKET_STRUCTURE_EXPLAINED.md",
+                "file": "Areas/Python 体系/Python/Python Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MARKET_STRUCTURE_EXPLAINED"
-            }
-          },
-          {
-            "id": "b294ff17bfb82d21",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Resources/Excalidraw/Drawing 2026-01-27 17.05.54.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-01-27 17.05.54.excalidraw"
-            }
-          },
-          {
-            "id": "c2154365ad711fa3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Polymarket-Trading/Weather Predict Data.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Weather Predict Data"
+              "title": "Python Basics"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -105,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 348.5
   },
   "right": {
     "id": "ac92377ccf211e5a",
@@ -114,6 +87,7 @@
       {
         "id": "24de068605125589",
         "type": "tabs",
+        "dimension": 40.85820895522388,
         "children": [
           {
             "id": "3a9387fde242830d",
@@ -121,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Polymarket-Trading/Weather Predict Data.md",
+                "file": "Resources/Task-Views/tasks-default.base",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Weather Predict Data 的反向链接列表"
+              "title": "tasks-default 的反向链接列表"
             }
           },
           {
@@ -164,6 +138,39 @@
             }
           },
           {
+            "id": "bac51d5b3c17ff83",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "0863faf6b8c9a1ef",
+        "type": "tabs",
+        "dimension": 59.14179104477611,
+        "children": [
+          {
+            "id": "1713e67c1cd88fda",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Areas/Python 体系/Python/Python Basics.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Python Basics 的大纲"
+            }
+          },
+          {
             "id": "23ac9506aea6abd4",
             "type": "leaf",
             "state": {
@@ -176,51 +183,16 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
-          },
-          {
-            "id": "1713e67c1cd88fda",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Projects/Polymarket-Trading/data/MARKET_STRUCTURE_EXPLAINED.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "MARKET_STRUCTURE_EXPLAINED 的大纲"
-            }
-          },
-          {
-            "id": "f20b2704003e9b9d",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "bac51d5b3c17ff83",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 441.5
+    "width": 373.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "tasknotes:Open mini calendar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -231,53 +203,51 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-kanban:创建新看板": false,
-      "tasknotes:Open mini calendar": false,
       "tasknotes:Open advanced calendar": false,
-      "tasknotes:Open task list": false,
       "tasknotes:Open agenda": false,
+      "tasknotes:Open task list": false,
       "tasknotes:Open kanban board": false,
       "tasknotes:Open pomodoro": false,
       "tasknotes:Open pomodoro stats": false,
       "tasknotes:Create new task": false
     }
   },
-  "active": "75dc73c65fd6c0d2",
+  "active": "cff30a4ac30194a3",
   "lastOpenFiles": [
-    "Resources/Excalidraw/Drawing 2026-02-09 14.36.46.excalidraw.md",
-    "Projects/Polymarket-Trading/Weather Predict Data.md",
-    "Resources/Excalidraw/Drawing 2026-01-27 17.05.54.excalidraw.md",
-    "Projects/Polymarket-Trading/README.md",
-    "Projects/Polymarket-Trading/Crypto_15m_Strategy.md",
-    "Projects/Polymarket-Trading/debug_scanner.js",
-    "Projects/Polymarket-Trading/test_suite.js",
-    "Projects/Polymarket-Trading/src/services/market.js",
-    "Projects/Polymarket-Trading/src/services",
-    "Projects/Polymarket-Trading/src/utils/time.js",
-    "Projects/Polymarket-Trading/src/utils",
-    "Projects/Polymarket-Trading/node_modules/dayjs/esm/plugin/weekday/index.js",
-    "Projects/Polymarket-Trading/node_modules/dayjs/esm/plugin/weekday/index.d.ts",
-    "Projects/Polymarket-Trading/node_modules/dayjs/esm/plugin/weekYear/index.js",
-    "Projects/Polymarket-Trading/node_modules/dayjs/esm/plugin/weekYear/index.d.ts",
-    "Projects/Polymarket-Trading/node_modules/dayjs/README.md",
-    "Projects/Polymarket-Trading/node_modules/dayjs/CHANGELOG.md",
-    "Projects/Polymarket-Trading/data/MARKET_STRUCTURE_EXPLAINED.md",
-    "Projects/Polymarket-Trading/data/README.md",
-    "Projects/Polymarket-Trading/node_modules/@ethersproject/signing-key/node_modules/bn.js/README.md",
-    "Projects/Polymarket-Trading/node_modules/@ethersproject/bignumber/node_modules/bn.js/README.md",
-    "Projects/Polymarket-Trading/node_modules/viem/node_modules/ws/README.md",
-    "Projects/Polymarket-Trading/node_modules/axios/lib/core/README.md",
-    "Projects/Polymarket-Trading/node_modules/axios/lib/helpers/README.md",
-    "Projects/Polymarket-Trading/node_modules/axios/lib/env/README.md",
-    "Projects/Polymarket-Trading/node_modules/axios/lib/adapters/README.md",
-    "Projects/Polymarket-Trading/node_modules/@polymarket/order-utils/dist/README.md",
-    "Projects/Polymarket-Trading/node_modules/@scure/bip39/README.md",
-    "Projects/Polymarket-Trading/node_modules/@types/node/README.md",
-    "Projects/Polymarket-Trading/node_modules/@scure/bip32/README.md",
-    "Projects/Polymarket-Trading/node_modules/@scure/base/README.md",
-    "Projects/Polymarket-Trading/node_modules/@polymarket/order-utils/README.md",
-    "Projects/Polymarket-Trading/node_modules/@noble/curves/README.md",
-    "Projects/Polymarket-Trading/node_modules/@noble/ciphers/README.md",
-    "Projects/Polymarket-Trading/node_modules/@polymarket/clob-client/README.md",
-    "Projects/Polymarket-Trading/node_modules/@polymarket/builder-signing-sdk/README.md"
+    "Resources/Task-Views/calendar-default.base",
+    "Areas/Python 体系/Python/Python Basics.md",
+    "Areas/Python 体系/Tasks/python-basics.md",
+    "Areas/Python 体系/Python_Full_Learning_Roadmap_2026.md",
+    "Areas/Python 体系/Python_for_JS_Devs_Roadmap.md",
+    "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/语句与声明.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/概述.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/表达式.md",
+    "Areas/Python 体系/Python/未命名",
+    "2026-02-24.md",
+    "Resources/Task-Views/tasks-default.base",
+    "Areas/Python 体系/Tasks",
+    "Areas/Python 体系/Python Roadmap.md",
+    "Areas/前端体系/体系看板.md",
+    "Areas/前端体系/体系数据库.base",
+    "Areas/AI体系/AI应用工程师/2026_AI应用工程师全栈路线图.md",
+    "Resources/Task-Views/agenda-default.base",
+    "Resources/Task-Views/kanban-default.base",
+    "Resources/Task-Views/mini-calendar-default.base",
+    "Resources/Task-Views/relationships.base",
+    "Areas/Python 体系/PYTHON_FOR_JS_DEVS.md",
+    "Areas/前端体系/ECMAScript/Ecmascript标准规范.md",
+    "Areas/Python 体系/Python",
+    "Areas/前端体系/ECMAScript/核心语法语义.md",
+    "Areas/前端体系/前端体系脑图.md",
+    "Home.md",
+    "执行上下文.md",
+    "Inbox/GEMINI.md",
+    "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
+    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Transformer架构.md",
+    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Tokenization原理.md",
+    "Areas/AI体系/AI应用工程师/01_基础与提示工程/README.md",
+    "Areas/AI体系/AI应用工程师/01_基础与提示工程/Prompt_Engineering_Guide.md"
   ]
 }
