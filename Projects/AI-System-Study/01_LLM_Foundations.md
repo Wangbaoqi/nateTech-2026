@@ -7,7 +7,7 @@ tags: [AI, Learning, Project, LLM]
 ---
 
 > 📚 关联知识库: [[Areas/AI体系/AI应用工程师/01_基础与提示工程/README|01_基础与提示工程]]
-> 💻 关联代码库: [[Areas/AI体系/AICode/01_Foundations/README|Code: 01_Foundations]]
+> 💻 关联代码库: [[使用指南|Code: 01_Foundations]]
 
 # 任务 01: LLM 基础与高级提示工程
 
