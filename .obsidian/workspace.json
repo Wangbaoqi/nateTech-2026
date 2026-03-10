@@ -238,8 +238,10 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "3690d9e0659db513",
+  "active": "bac51d5b3c17ff83",
   "lastOpenFiles": [
+    "Projects/Polymarket-Trading/Argos Collection/Weather 数据收集.md",
+    "Projects/Polymarket-Trading/Argos Collection",
     "Areas/AI体系/AI智能体/OpenClaw/Skills.md",
     "Areas/AI体系/AI智能体/OpenClaw/服务器部署.md",
     "Areas/AI体系/AI智能体/OpenClaw/resouces/openclaw服务器mult-agents架构图.excalidraw.md",
@@ -270,12 +272,10 @@
     "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
     "Areas/前端体系/ECMAScript/核心语言结构/语句与声明.md",
     "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
-    "Areas/前端体系/ECMAScript/核心语言结构/概述.md",
     "Areas/Python 体系/Python/未命名",
     "Resources/Task-Views/tasks-default.base",
     "Areas/Python 体系/Tasks",
     "Areas/前端体系/体系数据库.base",
-    "Resources/Task-Views/agenda-default.base",
-    "Resources/Task-Views/kanban-default.base"
+    "Resources/Task-Views/agenda-default.base"
   ]
 }
