@@ -37,18 +37,40 @@
             "id": "3690d9e0659db513",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Projects/Polymarket-Trading/Argos Collection/Weather 数据收集.md",
-                "mode": "source",
-                "source": false
+                "file": "Projects/Polymarket-Trading/架构流程图.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "Weather 数据收集"
+              "icon": "excalidraw-icon",
+              "title": "架构流程图.excalidraw"
+            }
+          },
+          {
+            "id": "24957463b40fa4a9",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Projects/Polymarket-Trading/Drawing 2026-03-11 13.55.01.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-03-11 13.55.01.excalidraw"
+            }
+          },
+          {
+            "id": "960991113d3d4efe",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-02-27 09.31.39.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-02-27 09.31.39.excalidraw"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -188,13 +210,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Polymarket-Trading/Argos Collection/Weather 数据收集.md",
+                "file": "Projects/Polymarket-Trading/Drawing 2026-03-11 13.55.01.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Weather 数据收集 的大纲"
+              "title": "Drawing 2026-03-11 13.55.01.excalidraw 的大纲"
             }
           },
           {
@@ -238,8 +260,13 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "3690d9e0659db513",
+  "active": "24957463b40fa4a9",
   "lastOpenFiles": [
+    "Projects/Polymarket-Trading/架构流程图.excalidraw.md",
+    "Projects/Polymarket-Trading/Drawing 2026-03-11 13.55.01.excalidraw.md",
+    "Inbox/GEMINI.md",
+    "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
+    "Excalidraw/Drawing 2026-02-27 09.31.39.excalidraw.md",
     "Projects/Polymarket-Trading/Polymarket 算法交易系统架构分析与优化方案.md",
     "Projects/Polymarket-Trading/Argos Collection/Weather 数据收集.md",
     "Projects/Polymarket-Trading/Argos Collection",
@@ -254,10 +281,7 @@
     "Areas/AI体系/AI智能体/OpenClaw/核心概念以及高级使用.md",
     "Areas/AI体系/AI智能体/OpenClaw/基本使用.md",
     "Resources/Excalidraw/2026学习进度表.excalidraw.md",
-    "Excalidraw/Drawing 2026-02-27 09.31.39.excalidraw.md",
     "Areas/Python 体系/Python/Python Basics.md",
-    "Inbox/GEMINI.md",
-    "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
     "Areas/AI体系/AI智能体/OpenClaw/常见问题&故障排查.md",
     "Excalidraw",
     "Areas/AI体系/AI智能体/OpenClaw 完整指南.md",
@@ -270,8 +294,6 @@
     "Areas/Python 体系/Python_Full_Learning_Roadmap_2026.md",
     "Areas/Python 体系/Python_for_JS_Devs_Roadmap.md",
     "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
-    "Areas/前端体系/ECMAScript/核心语言结构/语句与声明.md",
-    "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
     "Areas/Python 体系/Python/未命名",
     "Resources/Task-Views/tasks-default.base",
     "Areas/Python 体系/Tasks",
