@@ -51,10 +51,10 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Projects/Polymarket-Trading/Drawing 2026-03-11 13.55.01.excalidraw.md"
+                "file": "Projects/Polymarket-Trading/架构流程图.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Drawing 2026-03-11 13.55.01.excalidraw"
+              "title": "架构流程图.excalidraw"
             }
           },
           {
@@ -210,13 +210,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Polymarket-Trading/Drawing 2026-03-11 13.55.01.excalidraw.md",
+                "file": "Projects/Polymarket-Trading/架构流程图.excalidraw.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Drawing 2026-03-11 13.55.01.excalidraw 的大纲"
+              "title": "架构流程图.excalidraw 的大纲"
             }
           },
           {
@@ -262,12 +262,12 @@
   },
   "active": "24957463b40fa4a9",
   "lastOpenFiles": [
+    "Projects/Polymarket-Trading/交易架构图.excalidraw.md",
     "Projects/Polymarket-Trading/架构流程图.excalidraw.md",
-    "Projects/Polymarket-Trading/Drawing 2026-03-11 13.55.01.excalidraw.md",
+    "Projects/Polymarket-Trading/Polymarket 算法交易系统架构分析与优化方案.md",
     "Inbox/GEMINI.md",
     "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
     "Excalidraw/Drawing 2026-02-27 09.31.39.excalidraw.md",
-    "Projects/Polymarket-Trading/Polymarket 算法交易系统架构分析与优化方案.md",
     "Projects/Polymarket-Trading/Argos Collection/Weather 数据收集.md",
     "Projects/Polymarket-Trading/Argos Collection",
     "Areas/AI体系/AI智能体/OpenClaw/Skills.md",
