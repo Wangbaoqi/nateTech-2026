@@ -6,7 +6,7 @@ priority: medium
 tags: [AI, Learning, Project, FineTuning]
 ---
 
-> 📚 关联知识库: [[Areas/AI体系/AI应用工程师/04_微调与部署/README|04_微调与部署]]
+> 📚 关联知识库: [[3_Core LLM Elements|04_微调与部署]]
 > 💻 关联代码库: [[Areas/AI体系/AICode/04_FineTuning/README|Code: 04_FineTuning]]
 
 # 任务 04: 微调与量化

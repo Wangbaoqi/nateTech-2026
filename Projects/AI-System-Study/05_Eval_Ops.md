@@ -6,7 +6,7 @@ priority: medium
 tags: [AI, Learning, Project, Ops]
 ---
 
-> 📚 关联知识库: [[Areas/AI体系/AI应用工程师/05_评估与运维/README|05_评估与运维]]
+> 📚 关联知识库: [[1_Tpye of Models|05_评估与运维]]
 > 💻 关联代码库: [[Areas/AI体系/AICode/05_EvalOps/README|Code: 05_EvalOps]]
 
 # 任务 05: 评估与运维 (LLMOps)

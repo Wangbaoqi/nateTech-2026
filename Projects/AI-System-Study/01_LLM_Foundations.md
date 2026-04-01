@@ -6,7 +6,7 @@ priority: high
 tags: [AI, Learning, Project, LLM]
 ---
 
-> 📚 关联知识库: [[Areas/AI体系/AI应用工程师/01_基础与提示工程/README|01_基础与提示工程]]
+> 📚 关联知识库: [[2_Roles and Responsiblities|01_基础与提示工程]]
 > 💻 关联代码库: [[基本使用|Code: 01_Foundations]]
 
 # 任务 01: LLM 基础与高级提示工程

@@ -6,7 +6,7 @@ priority: high
 tags: [AI, Learning, Project, Agent]
 ---
 
-> 📚 关联知识库: [[Areas/AI体系/AI应用工程师/03_智能体与协议/README|03_智能体与协议]]
+> 📚 关联知识库: [[2_Embedding Models|03_智能体与协议]]
 > 💻 关联代码库: [[Areas/AI体系/AICode/03_Agent/README|Code: 03_Agent]]
 
 # 任务 03: Agent 智能体与工具链
