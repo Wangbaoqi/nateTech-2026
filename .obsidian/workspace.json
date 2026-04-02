@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "cb36bfc2d764f325",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/AI体系/AI应用工程师/Learning Plan.md",
+                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Learning Plan"
+              "title": "1_How LLMs Work"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 366.5
   },
   "right": {
     "id": "ac92377ccf211e5a",
@@ -161,13 +161,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/AI体系/AI应用工程师/Learning Plan.md",
+                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Learning Plan 的大纲"
+              "title": "1_How LLMs Work 的大纲"
             }
           },
           {
@@ -188,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 250.5
+    "width": 338.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,44 +212,44 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "cb36bfc2d764f325",
   "lastOpenFiles": [
-    "Inbox/阅读并整理 01_Introdction 下的所有文档（What is, Roles, Impact等），明确学习目标。.md",
-    "Resources/Task-Views/mini-calendar-default.base",
-    "Home.md",
+    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/2_Common Terminology.md",
+    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
+    "Areas/AI体系/AI应用工程师/10_Products/1_Product_Knowledge_Library.md",
     "Areas/AI体系/AI应用工程师/Learning Plan.md",
-    "Areas/AI体系/AI编程助手.md",
+    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/resources/Inference FlowDrawing.excalidraw.md",
+    "Areas/AI体系/AI应用工程师/10_Products/智能知识库与企业大脑 (Enterprise RAG Systems).md",
     "Areas/AI体系/AI应用工程师/AI应用工程师Roadmap.excalidraw.md",
-    "Areas/AI体系/AI应用工程师/Transformer架构.md",
-    "Areas/AI体系/AI应用工程师/09_Development Tools/AI Assisted Coding Tools.md",
-    "Areas/AI体系/AI应用工程师/AI学习路线图.md",
-    "Areas/AI体系/AI应用工程师/AI_Engineer_2026_Curriculum.md",
-    "Areas/AI体系/AI应用工程师/2026_AI应用工程师全栈路线图.md",
-    "Areas/AI体系/AI应用工程师/08_Multmodal AI/Multimodal AI.md",
+    "Inbox/年订阅费用计算.md",
+    "Inbox/阅读 Transformer 核心架构文档 (Focus Attention).md",
+    "Inbox/阅读并整理 01_Introdction 下的所有文档（What is, Roles, Impact等），明确学习目标。.md",
+    "Inbox/GEMINI.md",
+    "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
+    "Home.md",
+    "Areas/前端体系/ECMAScript/核心语法语义.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/语句与声明.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/概述.md",
+    "Areas/前端体系/ECMAScript/核心语言结构/表达式.md",
+    "Areas/前端体系/体系数据库.base",
+    "Areas/前端体系/AI前端场景.md",
+    "Areas/前端体系/体系看板.md",
+    "Areas/前端体系/前端体系脑图.md",
+    "Areas/AI体系/AI应用工程师/01_Introdction/1_What is an AI Engineer?.md",
+    "Areas/AI体系/AI应用工程师/10_Products",
+    "Areas/AI体系/AI应用工程师/01_Introdction/3_Impact on Product Development.md",
+    "Areas/AI体系/AI应用工程师/01_Introdction/4_AI Engineer vs ML Engineer.md",
+    "Areas/AI体系/AI应用工程师/01_Introdction/2_Roles and Responsiblities.md",
+    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/resources",
+    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/LLM_Working_Principle.excalidraw.md",
+    "Resources/Task-Views/mini-calendar-default.base",
     "Areas/AI体系/AI应用工程师/09_Development Tools",
-    "Areas/AI体系/AI应用工程师/06_AI Agents/2_Model Context Protocol.md",
     "Areas/AI体系/AI应用工程师/08_Multmodal AI",
     "Areas/AI体系/AI应用工程师/07_AI Safety and Ethics",
-    "Areas/AI体系/AI应用工程师/06_AI Agents/1_What are AI Agents.md",
     "Areas/AI体系/AI应用工程师/06_AI Agents",
-    "Areas/AI体系/AI应用工程师/05_RGAs/1_What are RGAs.md",
-    "Areas/AI体系/AI应用工程师/04_Embeddings and Vector Databases/3_Vector Database.md",
-    "Areas/AI体系/AI应用工程师/04_Embeddings and Vector Databases/2_Embedding Models.md",
-    "Areas/AI体系/AI应用工程师/04_Embeddings and Vector Databases/1_What are Embeddings.md",
-    "Areas/AI体系/AI应用工程师/03_AI Models/2_Choosing Models.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/5_Context Engineering.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/2_Common Terminology.md",
-    "Areas/AI体系/AI应用工程师/03_AI Models/1_Tpye of Models.md",
-    "Areas/AI体系/AI应用工程师/04_Type of Models/LLMOps_Trace.md",
-    "Areas/AI体系/AI应用工程师/03_Prompt vs Context Engineering/1_Prompt Engineering.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/4_Prompt Engineering",
-    "Areas/AI体系/AI应用工程师/03_Prompt vs Context Engineering/01_ReAct_从零手写Agent.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/3_Core LLM Elements.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
     "Resources/Task-Views/kanban-default.base",
-    "Resources/Task-Views/tasks-default.base",
-    "Resources/Task-Views/agenda-default.base",
-    "Resources/Task-Views/calendar-default.base",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }
