@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cb36bfc2d764f325",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -212,10 +212,15 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "cb36bfc2d764f325",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Areas/Python 体系/Python/Python Basics.md",
+    "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
+    "Areas/Python 体系/PYTHON_FOR_JS_DEVS.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/2_Common Terminology.md",
+    "Areas/Python 体系/Tasks/python-basics.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
+    "Home.md",
     "Areas/AI体系/AI应用工程师/10_Products/1_Product_Knowledge_Library.md",
     "Areas/AI体系/AI应用工程师/Learning Plan.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/resources/Inference FlowDrawing.excalidraw.md",
@@ -226,7 +231,6 @@
     "Inbox/阅读并整理 01_Introdction 下的所有文档（What is, Roles, Impact等），明确学习目标。.md",
     "Inbox/GEMINI.md",
     "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
-    "Home.md",
     "Areas/前端体系/ECMAScript/核心语法语义.md",
     "Areas/前端体系/ECMAScript/核心语言结构/语句与声明.md",
     "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
@@ -238,11 +242,7 @@
     "Areas/前端体系/前端体系脑图.md",
     "Areas/AI体系/AI应用工程师/01_Introdction/1_What is an AI Engineer?.md",
     "Areas/AI体系/AI应用工程师/10_Products",
-    "Areas/AI体系/AI应用工程师/01_Introdction/3_Impact on Product Development.md",
-    "Areas/AI体系/AI应用工程师/01_Introdction/4_AI Engineer vs ML Engineer.md",
-    "Areas/AI体系/AI应用工程师/01_Introdction/2_Roles and Responsiblities.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/resources",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/LLM_Working_Principle.excalidraw.md",
     "Resources/Task-Views/mini-calendar-default.base",
     "Areas/AI体系/AI应用工程师/09_Development Tools",
     "Areas/AI体系/AI应用工程师/08_Multmodal AI",
