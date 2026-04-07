@@ -37,6 +37,5 @@
   "Resources": "LiCassetteTape",
   "Projects": "LiContainer",
   "Inbox": "LiInbox",
-  "Areas": "LiAreaChart",
-  "Archives": "LiArchive"
+  "Areas": "LiAreaChart"
 }
