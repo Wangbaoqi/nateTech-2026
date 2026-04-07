@@ -23,12 +23,14 @@
             "id": "da8b86f6415ad7bd",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Projects/Polymarket-Trading/Drawing 2026-03-20 23.04.31.excalidraw.md"
+                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-03-20 23.04.31.excalidraw"
+              "icon": "lucide-file",
+              "title": "1_How LLMs Work"
             }
           }
         ],
@@ -205,12 +207,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "1_How LLMs Work 的大纲"
             }
           }
         ]
@@ -240,9 +243,10 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "c1f3a71f2d8a34f8",
+  "active": "da8b86f6415ad7bd",
   "lastOpenFiles": [
     "Projects/Polymarket-Trading/交易架构图.excalidraw.md",
+    "Projects/Polymarket-Trading/架构流程图.excalidraw.md",
     "Projects/Polymarket-Trading/weather设计页面UI.excalidraw.md",
     "Inbox/阅读并整理 01_Introdction 下的所有文档（What is, Roles, Impact等），明确学习目标。.md",
     "Inbox/年订阅费用计算.md",
@@ -276,7 +280,6 @@
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM",
     "Areas/AI体系/AI应用工程师/01_Introdction/4_AI Engineer vs ML Engineer.md",
-    "Areas/AI体系/AI应用工程师/01_Introdction/3_Impact on Product Development.md",
     "Areas/AI体系/AI应用工程师/01_Introdction",
     "Resources/Excalidraw/Scripts/Downloaded/Slideshow.svg",
     "Resources/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
