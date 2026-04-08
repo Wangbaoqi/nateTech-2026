@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
+                "file": "Projects/AI-System-Study/01_LLM_Foundations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_How LLMs Work"
+              "title": "01_LLM_Foundations"
             }
           }
         ]
@@ -161,13 +161,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
+                "file": "Projects/AI-System-Study/01_LLM_Foundations.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1_How LLMs Work 的大纲"
+              "title": "01_LLM_Foundations 的大纲"
             }
           },
           {
@@ -214,13 +214,26 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Projects/AI-System-Study/04_Fine_Tuning.md",
+    "Projects/AI-System-Study/01_LLM_Foundations.md",
+    "Areas/AI体系/FrontEnd Engineer 和 AI Engineer.md",
+    "Home.md",
+    "Areas/Python 体系/Python/21_Testing",
+    "Areas/Python 体系/Python/20_File Handling",
+    "Areas/Python 体系/Python/19_Code Formatting",
+    "Areas/Python 体系/Python/18_Static Typing",
+    "Areas/Python 体系/Python/17_Environments",
+    "Areas/Python 体系/Python/16_Concurrency",
+    "Areas/Python 体系/Python/15_Learn a Framework",
+    "Areas/Python 体系/Python/14_Context Manager",
+    "Areas/Python 体系/Python/13_Paradigms",
+    "Areas/Python 体系/Python/12_Generator Expressions",
+    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
     "Areas/Python 体系/Python/Python Basics.md",
     "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
     "Areas/Python 体系/PYTHON_FOR_JS_DEVS.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/2_Common Terminology.md",
     "Areas/Python 体系/Tasks/python-basics.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work.md",
-    "Home.md",
     "Areas/AI体系/AI应用工程师/10_Products/1_Product_Knowledge_Library.md",
     "Areas/AI体系/AI应用工程师/Learning Plan.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/resources/Inference FlowDrawing.excalidraw.md",
@@ -236,20 +249,7 @@
     "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
     "Areas/前端体系/ECMAScript/核心语言结构/概述.md",
     "Areas/前端体系/ECMAScript/核心语言结构/表达式.md",
-    "Areas/前端体系/体系数据库.base",
     "Areas/前端体系/AI前端场景.md",
-    "Areas/前端体系/体系看板.md",
-    "Areas/前端体系/前端体系脑图.md",
-    "Areas/AI体系/AI应用工程师/01_Introdction/1_What is an AI Engineer?.md",
-    "Areas/AI体系/AI应用工程师/10_Products",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/resources",
-    "Resources/Task-Views/mini-calendar-default.base",
-    "Areas/AI体系/AI应用工程师/09_Development Tools",
-    "Areas/AI体系/AI应用工程师/08_Multmodal AI",
-    "Areas/AI体系/AI应用工程师/07_AI Safety and Ethics",
-    "Areas/AI体系/AI应用工程师/06_AI Agents",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/4_Prompt Engineering",
-    "Resources/Task-Views/kanban-default.base",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }
