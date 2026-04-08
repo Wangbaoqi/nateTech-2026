@@ -212,8 +212,9 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "75dc73c65fd6c0d2",
   "lastOpenFiles": [
+    "Projects/Polymarket-Trading/Drawing 2026-03-20 23.04.31.excalidraw.md",
     "Projects/AI-System-Study/04_Fine_Tuning.md",
     "Projects/AI-System-Study/01_LLM_Foundations.md",
     "Areas/AI体系/FrontEnd Engineer 和 AI Engineer.md",
@@ -249,7 +250,6 @@
     "Areas/前端体系/ECMAScript/核心语言结构/函数与类.md",
     "Areas/前端体系/ECMAScript/核心语言结构/概述.md",
     "Areas/前端体系/ECMAScript/核心语言结构/表达式.md",
-    "Areas/前端体系/AI前端场景.md",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }

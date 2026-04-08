@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiHome",
       "LiArchive",
       "LiAreaChart",
       "LiInbox",
-      "LiContainer"
+      "LiContainer",
+      "LiCassetteTape"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -37,7 +37,5 @@
   "Resources": "LiCassetteTape",
   "Projects": "LiContainer",
   "Inbox": "LiInbox",
-  "Areas": "LiAreaChart",
-  "Archives": "LiArchive",
-  "Home.md": "LiHome"
+  "Areas": "LiAreaChart"
 }
