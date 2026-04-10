@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/1_tokenization.md",
+                "file": "Areas/AI体系/AI IDE 平台/Antigravity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_tokenization"
+              "title": "Antigravity"
             }
           }
         ]
@@ -161,13 +161,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/1_tokenization.md",
+                "file": "Areas/AI体系/AI IDE 平台/Antigravity.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "1_tokenization 的大纲"
+              "title": "Antigravity 的大纲"
             }
           },
           {
@@ -214,17 +214,19 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/0_OverView.md",
+    "Areas/AI体系/AI IDE 平台",
+    "Areas/AI体系/FrontEnd Engineer 和 AI Engineer.md",
+    "Areas/AI体系/AI IDE 平台/Antigravity.md",
+    "Home.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/1_tokenization.md",
+    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/0_OverView.md",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/2_tokenization",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work",
     "Projects/AI-System-Study/01_LLM_Foundations.md",
     "Projects/AI-System-Study/04_Fine_Tuning.md",
     "Projects/AI-System-Study/03_Agentic_Design.md",
     "Projects/AI-System-Study/02_RAG_Engineering.md",
-    "Home.md",
     "Projects/Polymarket-Trading/Drawing 2026-03-20 23.04.31.excalidraw.md",
-    "Areas/AI体系/FrontEnd Engineer 和 AI Engineer.md",
     "Areas/Python 体系/Python/21_Testing",
     "Areas/Python 体系/Python/20_File Handling",
     "Areas/Python 体系/Python/19_Code Formatting",
@@ -248,8 +250,6 @@
     "Inbox/阅读并整理 01_Introdction 下的所有文档（What is, Roles, Impact等），明确学习目标。.md",
     "Inbox/GEMINI.md",
     "Resources/OpenClaw-Manual/OpenClaw_User_Guide.md",
-    "Areas/前端体系/ECMAScript/核心语法语义.md",
-    "Areas/前端体系/ECMAScript/核心语言结构/语句与声明.md",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }
