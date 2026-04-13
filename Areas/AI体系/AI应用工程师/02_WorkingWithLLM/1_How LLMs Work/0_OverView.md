@@ -9,27 +9,11 @@
 
 ## 第一章：Tokenization——大模型的数字基石
 
-[[1_tokenization]]
+[[1_Tokenization]]
+
 
 ## 第二章：Transformer 架构——AI 大脑的解剖图
-### 2.1 纯 Decoder 架构：为什么 GPT 赢了？
-- **2.1.1 架构选择逻辑**：Encoder-Decoder (T5) vs. Prefix LM vs. Decoder-only (GPT) 的核心差异。
-- **2.1.2 Causal Masking (因果掩码)**：如何确保模型在训练阶段“不偷看”未来的关键数学实现。
-- **2.1.3 残差连接 (Residual) 与层级归一化 (LN)**：深层网络梯度消失的“解药”。
 
-### 2.2 自注意力机制 (Self-Attention) 深度剖析
-- **2.2.1 Q, K, V 向量的数学本质**：Query（寻址）、Key（键值）与 Value（内容）的映射过程。
-- **2.2.2 多头注意力 (Multi-Head Attention)**：让模型同时关注全局语法、局部语义与情感色彩。
-- **2.2.3 缩放点积注意力的稳定性推导**：为什么需要除以 $\sqrt{d_k}$？
-
-### 2.3 位置编码 (Positional Encoding) 的演进
-- **2.3.1 绝对位置编码的局限性**：对长文本外推能力的先天不足。
-- **2.3.2 旋转位置编码 (RoPE)**：复数空间中的旋转矩阵如何完美保留相对位置信息。
-- **2.3.3 ALiBi 与相对位置偏置**：提升模型长序列处理能力的前沿技术。
-
-### 2.4 归一化与激活函数：神经网络的微调阀门
-- **2.4.1 Pre-Norm vs Post-Norm**：为什么 Llama 等主流模型普遍选择 Pre-Norm 以增强训练稳定性。
-- **2.4.2 激活函数的进化**：从 ReLU 到 GeLU，再到 SwiGLU（Gating 机制在 FFN 中的应用）。
 
 ---
 
