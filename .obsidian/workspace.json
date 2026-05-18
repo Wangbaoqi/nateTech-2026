@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/web3-project/litVM/项目总览.md",
+                "file": "Areas/策略套利/核心概念/流动性摩擦.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "项目总览"
+              "title": "流动性摩擦"
             }
           }
         ]
@@ -161,13 +161,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/web3-project/litVM/项目总览.md",
+                "file": "Areas/策略套利/核心概念/流动性摩擦.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "项目总览 的大纲"
+              "title": "流动性摩擦 的大纲"
             }
           },
           {
@@ -188,7 +188,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 274.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,9 +214,15 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Projects/web3-project/Mining/浏览器挖矿.md",
+    "Areas/策略套利/polymarket/跨事件【🔒 互斥关系】套利.md",
+    "Areas/策略套利/核心概念/买卖价差（Bid-Ask Spread）.md",
+    "Areas/策略套利/核心概念/流动性摩擦.md",
+    "Areas/策略套利/核心概念",
     "Home.md",
+    "Areas/策略套利/polymarket",
+    "Areas/策略套利",
     "Projects/web3-project/litVM/项目总览.md",
+    "Projects/web3-project/Mining/浏览器挖矿.md",
     "Projects/web3-project/Mining",
     "Projects/web3-project/litVM",
     "Projects/web3-project",
@@ -240,16 +246,10 @@
     "Areas/AI体系/AI应用工程师/AI应用工程师Roadmap.excalidraw.md",
     "Areas/AI体系/AI应用工程师/01_Introdction/2_Roles and Responsiblities.md",
     "Inbox/阅读并整理 01_Introdction 下的所有文档（What is, Roles, Impact等），明确学习目标。.md",
-    "Areas/AI体系/FrontEnd Engineer 和 AI Engineer.md",
-    "Areas/AI体系/AI IDE 平台/Antigravity.md",
     "Areas/AI体系/AI IDE 平台",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/2_tokenization",
     "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work",
-    "Projects/AI-System-Study/01_LLM_Foundations.md",
     "Areas/Python 体系/Python/21_Testing",
-    "Areas/Python 体系/Python/20_File Handling",
-    "Areas/Python 体系/Python/19_Code Formatting",
-    "Areas/Python 体系/Python/18_Static Typing",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }
