@@ -76,9 +76,9 @@ mindmap
 本计划为您规划了 5 个月的成长周期。请每周至少投入 10-15 小时进行实战演练。
 
 ### 🎯 第 1 个月：大模型基石与交互 (Foundations & LLM APIs)
-* **关联本地目录**：`[AI应用工程师/01_Introdction](file:///Users/wangbaoqi/personal/nateTech-2026/Areas/AI%E4%BD%93%E7%B3%BB/AI%E5%BA%94%E7%94%A8%E5%B7%A5%E7%A8%8B%E5%B8%88/01_Introdction)`, `[02_WorkingWithLLM](file:///Users/wangbaoqi/personal/nateTech-2026/Areas/AI%E4%BD%93%E7%B3%BB/AI%E5%BA%94%E7%94%A8%E5%B7%A5%E7%A8%8B%E5%B8%88/02_WorkingWithLLM)`
+* **关联本地目录**：
 * [[1_What is an AI Engineer?]]  
-* []
+* [02_WorkingWithLLM]
 
 - [ ] #task **【Week 1-2】** 精读 Introduction 中的所有文档，对比 AI Engineer 与 ML 工程师的区别，理清定位。
 - [ ] #task **【Week 1-2】** 使用 OpenAI 或 Anthropic API 编写第一个 Python/Node 脚本，实现文本生成与带上下文的多轮对话记忆。
