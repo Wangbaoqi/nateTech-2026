@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/Python 体系/Python-Plan/Week 1 实战.md",
+                "file": "Areas/前端体系/体系看板.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 1 实战"
-            }
-          },
-          {
-            "id": "03b40d1bca7a7b43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Home.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Home"
+              "title": "体系看板"
             }
           }
         ]
@@ -55,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -175,13 +163,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/Python 体系/Python-Plan/Week 1 实战.md",
+                "file": "Areas/前端体系/体系看板.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Week 1 实战 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -228,42 +216,44 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Areas/Python 体系/Python/22_Library/Built-in library.md",
-    "Areas/Python 体系/Python/22_Library/Built-in library.md",
-    "Areas/Python 体系/Python-Plan/Week 1 实战.md",
-    "Areas/Python 体系/Python/22_Library",
-    "Areas/Python 体系/Python/01_Learn the Basics/Python Basics.md",
-    "Areas/AI体系/前端工程师转AI应用工程师终极指南.md",
-    "Areas/Python 体系/Python-Plan",
-    "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/2_Common Terminology.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/2_Transformer.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/2_Embedding Layer.md",
+    "Areas/前端体系/前端AI转型.md",
+    "Areas/前端体系/前端体系脑图.md",
+    "Areas/前端体系/AI Native",
+    "Areas/前端体系/NodeJs Full-Stack",
+    "Areas/前端体系/Modern Frameworks",
+    "Areas/前端体系/Core Language",
+    "Areas/前端体系/体系看板.md",
+    "Areas/前端体系/体系数据库.base",
+    "Areas/前端体系/Core Language/ECMAScript/Ecmascript标准规范.md",
+    "Areas/前端体系/Core Language/ECMAScript/核心语言结构/语句与声明.md",
+    "Areas/前端体系/Core Language/ECMAScript/核心语言结构/函数与类.md",
+    "Areas/前端体系/Core Language/ECMAScript/核心语言结构/概述.md",
+    "Areas/前端体系/Core Language/ECMAScript/核心语言结构/表达式.md",
+    "Areas/Python 体系/Python 学习指南/Day01_学习指南与实操.md",
+    "Areas/Python 体系/Python 学习指南/Python学习指南.md",
+    "Areas/Python 体系/Python 学习指南/Python28天每日学习计划.md",
     "Areas/Python 体系/Python_Full_Learning_Roadmap_2026.md",
     "Areas/Python 体系/Python_for_JS_Devs_Roadmap.md",
-    "Areas/Python 体系/PYTHON_FOR_JS_DEVS.md",
+    "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
+    "Areas/Python 体系/Python-Plan/Week 1 实战.md",
+    "Areas/Python 体系/Python 学习指南",
     "Home.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/1_How LLMs Work/0_OverView.md",
-    "Areas/AI体系/AI应用工程师/AI应用工程师Roadmap.excalidraw.md",
-    "Areas/AI体系/AI应用工程师/02_WorkingWithLLM/LLM_Working_Principle.excalidraw.md",
-    "Areas/AI体系/FrontEnd Engineer 和 AI Engineer.md",
-    "Areas/AI体系/AI应用工程师/Month_1_学习作业与实战清单.md",
-    "Areas/AI体系/AI应用工程师/01_Introdction/1_What is an AI Engineer?.md",
-    "Areas/AI体系/AI应用工程师/Learning Plan.md",
-    "Areas/AI体系/AI智能体/Antigravity Agent/分析优化项目智能体.md",
-    "Areas/AI体系/AI智能体/Antigravity Agent",
-    "Areas/策略套利/核心概念/流动性摩擦.md",
-    "Areas/策略套利/polymarket/跨事件【🔒 互斥关系】套利.md",
-    "Areas/策略套利/核心概念/买卖价差（Bid-Ask Spread）.md",
-    "Areas/策略套利/核心概念",
-    "Areas/策略套利/polymarket",
-    "Areas/策略套利",
+    "Inbox/React Flow Tldraw 无限画布与 Agent 交互.md",
+    "Inbox/Chrome Extension MV3 SidePanel & Content Script Copilot.md",
     "Projects/web3-project/litVM/项目总览.md",
-    "Projects/web3-project/Mining/浏览器挖矿.md",
-    "Projects/web3-project/Mining",
-    "Projects/web3-project/litVM",
-    "Projects/web3-project",
-    "Areas/AI体系/AI IDE 平台",
+    "Projects/web3-project/litVM/LitVM深度参与指南.md",
+    "Projects/web3-project/litVM/项目问题.md",
+    "Pasted image 20260728133631.png",
+    "Pasted image 20260728115431.png",
+    "Pasted image 20260728114828.png",
+    "Areas/稳定投资/web3稳定投资文件.md",
+    "Areas/稳定投资/web3稳定投资.md",
+    "Areas/稳定投资",
+    "Inbox/unchild.md",
+    "Inbox/GEMINI.md",
+    "Areas/Python 体系/Python/22_Library",
+    "Areas/Python 体系/Python-Plan",
+    "Areas/AI体系/AI智能体/Antigravity Agent",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }

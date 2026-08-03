@@ -1,0 +1,103 @@
+
+http://localhost:3000/hnams_web_nightly/common/paymentCompleted?orderSource=CAP&flightNo=HU7939&orderNo=202606171431349178283&orderType=XIANJIN&payType=alipayH5wap&totalPrice=undefined&payName=undefined&charset=utf-8&out_trade_no=2026061744832388563&method=alipay.trade.wap.pay.return&total_amount=0.01&sign=r2L2Oqz1eTxDZes4vLXW75v9jgnH8MyBD46v6SkLRwcoXtDgg0UsPLf7HD20sN1US85qb7Akc%2FQ9p147jOHdhuJcky8VTql7poYJktGjo7OOCYcfr%2BjUo6o04jyXMDRPRtN3UvsTfyaibrW%2FwPd3MxAoV9wIwhjDfesx%2B%2FyeASc%3D&trade_no=2026061723001425801453180014&auth_app_id=2015112600874818&version=1.0&app_id=2015112600874818&sign_type=RSA&seller_id=2088801187919284&timestamp=2026-06-17+14%3A45%3A08
+
+
+http://localhost:3000/hnams_web_nightly/common/paymentCompleted?orderSource=CAP&flightNo=HU7939&orderNo=202606171552347464619&orderType=ZT_LUGGAGE&payType=alipayH5wap&totalPrice=1890&charset=UTF-8&out_trade_no=202606171215524300587&method=alipay.trade.wap.pay.return&total_amount=0.01&sign=nltuzV2LLkO%2B54Jjda%2Fn18dfgQPPLPpuqvUVtiPWAl9nNpYOwksN5i9uVI21c3GUPXuWQ%2F%2FPYeyh%2BvVEKk%2Bg1a1yDOXt3fX7mAIEw6o7DzV8gxnrefLgwtGBYSBquHL4cYyqL2RvnCdeGtbfgHScMlcLUjLyIoENbbfclCM7%2FBM%3D&trade_no=2026061723001425801453176512&auth_app_id=2015112600874818&version=1.0&app_id=2015112600874818&sign_type=RSA&seller_id=2088801187919284&timestamp=2026-06-17+15%3A52%3A58
+
+
+```
+            subMenus.push(
+              {
+                "name": "陪伴服务",
+                "val": "FYK_LUGGAGE_ORDER",
+                "title": "陪伴服务",
+                "searchTitle": "陪伴服务-订单",
+                "img": "https://m.hnair.com/cms/config/nightly/entryList/202409/P020240914331879389138.png",
+                "img2": "https://m.hnair.com/cms/config/nightly/entryList/202409/P020240914331879168654.png",
+                "img3": "",
+                "img4": "",
+                "pic": "",
+                "pic2": "",
+                "pic3": "",
+                "pic4": "",
+                "link": "http://hnams_web_nightly/hnams_web_nightly/auxiliaryBooking/orderList",
+                "linkArgs": "t={time}&bookingType=COMPANIONSHIP",
+                "link2": "http://hnams_web_nightly/hnams_web_nightly/auxiliaryBooking/orderList",
+                "linkArgs2": "t={time}&bookingType=COMPANIONSHIP",
+                "clickAction": "interPage",
+                "clickAction2": "interPage",
+                "detail": "",
+                "switch": "1",
+                "isLogin": "1",
+                "userType": "",
+                "userTags": "",
+                "pointId": "",
+                "plantform": "111111111",
+                "mChannel": "",
+                "beginVersion": "",
+                "endVersion": "",
+                "sens": "0",
+                "type": "order",
+                "typeName": "",
+                "subType": "",
+                "keywords": "",
+                "pinyin": "",
+                "notForSenior": "0",
+                "configdesc": "",
+                "searchType": "textLink",
+                "cornerImg": "",
+                "noSearch": "",
+                "orderType": "hkfy"
+              }
+            )
+
+
+{
+      "name": "陪伴服务",
+      "val": "C_MEALS",
+      "title": "",
+      "searchTitle": "",
+      "img": "https://m.hnair.com/cms/config/nightly/newMoreList/202502/P020250218598326020252.png",
+      "img2": "https://m.hnair.com/cms/config/nightly/newMoreList/202502/P020250218598326018425.png",
+      "img3": "https://m.hnair.com/cms/config/nightly/newMoreList/202502/P020250218598326013060.png",
+      "img4": "",
+      "pic": "",
+      "pic2": "",
+      "pic3": "",
+      "pic4": "",
+      "link": "https://uat-app.hnair.com/hnams_web_nightly/auxiliaryBooking/itinerary",
+      "linkArgs": "t={time}&bookingType=COMPANIONSHIP",
+      "link2": "https://uat-app.hnair.com/hnams_web_nightly/auxiliaryBooking/itinerary",
+      "linkArgs2": "t={time}&bookingType=COMPANIONSHIP",
+      "clickAction": "interPage",
+      "clickAction2": "interPage",
+      "detail": "",
+      "switch": "1",
+      "isLogin": "0",
+      "userType": "JP,",
+      "userTags": "",
+      "pointId": "",
+      "plantform": "1111111111",
+      "newPlatform": "",
+      "mChannel": "",
+      "beginVersion": "7.3.0",
+      "endVersion": "",
+      "sens": "0",
+      "type": "home",
+      "typeName": "",
+      "subType": "1",
+      "keywords": "",
+      "pinyin": "",
+      "notForSenior": "0",
+      "configdesc": "HU/CN",
+      "searchType": "textLink",
+      "cornerImg": "",
+      "noSearch": "1",
+      "orderType": "",
+      "isPopConfirm": "",
+      "popContent": "",
+      "moreSubType": "1",
+      "hallSubType": "9",
+      "myCommonUse": ""
+    }
+```

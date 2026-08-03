@@ -3,5 +3,7 @@
   "alwaysUpdateLinks": true,
   "readableLineLength": true,
   "foldIndent": true,
-  "showIndentGuide": false
+  "showIndentGuide": false,
+  "rightToLeft": false,
+  "showLineNumber": false
 }
