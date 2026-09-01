@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/Ecmascript心智模型和实现规范.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_Introduction"
+              "title": "Ecmascript心智模型和实现规范"
             }
           }
         ]
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/Ecmascript心智模型和实现规范.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -214,10 +214,12 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "75dc73c65fd6c0d2",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Areas/前端体系/前端体系脑图.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/核心语法语义.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Ecmascript心智模型和实现规范.md",
     "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
+    "Areas/前端体系/前端体系脑图.md",
     "Areas/心智模式/利用AI快速掌握编程语言.md",
     "Areas/Python 体系/Python/09_Package Managers/uv 管理器.md",
     "Areas/心智模式",
@@ -248,13 +250,11 @@
     "Projects/web3-project/litVM/LitVM深度参与指南.md",
     "Areas/前端体系/05_Engineering Infra",
     "Areas/前端体系/04_AI Native",
-    "Areas/前端体系/01_Core Language/ECMAScript/Ecmascript标准规范.md",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/语句与声明.md",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/函数与类.md",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/概述.md",
     "Areas/Python 体系/Python_for_JS_Devs_Roadmap.md",
     "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
-    "Inbox/React Flow Tldraw 无限画布与 Agent 交互.md",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }
