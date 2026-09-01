@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Dex-Grid-Trading/Architecture.md",
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Architecture"
+              "title": "01_Introduction"
             }
           }
         ]
@@ -163,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Dex-Grid-Trading/Architecture.md",
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -214,47 +214,47 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "75dc73c65fd6c0d2",
   "lastOpenFiles": [
-    "Projects/Dex-Grid-Trading/Using Guide.md",
-    "Projects/Dex-Grid-Trading/Architecture.md",
+    "Areas/前端体系/前端体系脑图.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
+    "Areas/心智模式/利用AI快速掌握编程语言.md",
+    "Areas/Python 体系/Python/09_Package Managers/uv 管理器.md",
+    "Areas/心智模式",
+    "Areas/Python 体系/Python/01_Learn the Basics/Python Basics.md",
+    "Areas/Python 体系/Python-Plan/Week 1 实战.md",
+    "Areas/前端体系/前端AI转型.md",
+    "Areas/前端体系/体系数据库.base",
+    "Areas/前端体系/体系看板.md",
+    "Areas/Rust体系/Rust体系脑图.md",
+    "Areas/Python 体系/Python_Full_Learning_Roadmap_2026.md",
+    "Areas/Python 体系/Python 学习指南/Python学习指南.md",
+    "Areas/Python 体系/Python 学习指南/Python28天每日学习计划.md",
+    "Areas/Python 体系/Python 学习指南/Day01_学习指南与实操.md",
+    "Areas/前端体系/06_CS Fundamentals/06.4_技术领导与ROI",
+    "Areas/前端体系/06_CS Fundamentals/06.3_系统架构设计模式",
+    "Areas/前端体系/06_CS Fundamentals/06.2_数据结构与算法",
+    "Areas/前端体系/06_CS Fundamentals/06.1_计算机网络协议",
+    "Areas/前端体系/06_CS Fundamentals",
     "Home.md",
+    "Areas/稳定投资/web3稳定投资文件.md",
+    "Pasted image 20260728133631.png",
+    "Pasted image 20260728115431.png",
+    "Pasted image 20260728114828.png",
+    "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/表达式.md",
+    "Projects/Dex-Grid-Trading/Architecture.md",
+    "Projects/Dex-Grid-Trading/Using Guide.md",
     "Projects/Dex-Grid-Trading",
     "Projects/web3-project/litVM/LitVM深度参与指南.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/表达式.md",
-    "Areas/前端体系/前端体系脑图.md",
-    "Areas/前端体系/前端AI转型.md",
-    "Areas/前端体系/体系看板.md",
-    "Areas/前端体系/体系数据库.base",
     "Areas/前端体系/05_Engineering Infra",
     "Areas/前端体系/04_AI Native",
-    "Areas/前端体系/03_NodeJs Full-Stack",
-    "Areas/前端体系/02_Modern Frameworks",
-    "Areas/前端体系/01_Core Language",
     "Areas/前端体系/01_Core Language/ECMAScript/Ecmascript标准规范.md",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/语句与声明.md",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/函数与类.md",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/概述.md",
-    "Areas/Python 体系/Python 学习指南/Day01_学习指南与实操.md",
-    "Areas/Python 体系/Python 学习指南/Python学习指南.md",
-    "Areas/Python 体系/Python 学习指南/Python28天每日学习计划.md",
-    "Areas/Python 体系/Python_Full_Learning_Roadmap_2026.md",
     "Areas/Python 体系/Python_for_JS_Devs_Roadmap.md",
     "Areas/Python 体系/Python_AI_App_Ecosystem_2026.md",
-    "Areas/Python 体系/Python-Plan/Week 1 实战.md",
-    "Areas/Python 体系/Python 学习指南",
     "Inbox/React Flow Tldraw 无限画布与 Agent 交互.md",
-    "Inbox/Chrome Extension MV3 SidePanel & Content Script Copilot.md",
-    "Projects/web3-project/litVM/项目总览.md",
-    "Projects/web3-project/litVM/项目问题.md",
-    "Pasted image 20260728133631.png",
-    "Pasted image 20260728115431.png",
-    "Pasted image 20260728114828.png",
-    "Areas/稳定投资/web3稳定投资文件.md",
-    "Areas/稳定投资/web3稳定投资.md",
-    "Areas/稳定投资",
-    "Inbox/unchild.md",
-    "Areas/Python 体系/Python/22_Library",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }
