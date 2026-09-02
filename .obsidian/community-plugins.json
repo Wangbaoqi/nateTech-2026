@@ -1,9 +1,10 @@
 [
   "obsidian-style-settings",
-  "dataview",
   "obsidian-excalidraw-plugin",
   "obsidian-git",
   "tasknotes",
   "obsidian-icon-folder",
-  "homepage"
+  "homepage",
+  "obsidian-plantuml",
+  "obsidian-mindmap-nextgen"
 ]
