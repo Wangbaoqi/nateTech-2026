@@ -13,16 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/前端体系/01_Core Language/ECMAScript/02_心智模型与引擎实现规范.md",
+                "file": "Projects/AI-System-Study/01_LLM_Foundations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_心智模型与引擎实现规范"
+              "title": "01_LLM_Foundations"
             }
           },
           {
-            "id": "a19a288f096d873a",
+            "id": "a4e1169744f93cbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -229,19 +229,22 @@
       "tasknotes:Create new task": false
     }
   },
-  "active": "a19a288f096d873a",
+  "active": "a4e1169744f93cbb",
   "lastOpenFiles": [
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/03_规范核心条款与抽象算法推演 (维度二).md",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域 (维度一).md",
+    "Home.md",
+    "Projects/AI-System-Study/01_LLM_Foundations.md",
+    "Resources/Excalidraw/2026学习进度表.excalidraw.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/01_模块架构全景白板 (Excalidraw).md",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/04_现代引擎物理实现 (维度三).md",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/05_实战靶场、命令行探针与代码实验 (维度四).md",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/06_工业级工程准则与下一阶段导引 (衔接下一阶段).md",
     "Areas/前端体系/01_Core Language/ECMAScript/02_心智模型与引擎实现规范.md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_六阶学习路线规划.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域 (维度一).md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/04_现代引擎物理实现 (维度三).md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/03_规范核心条款与抽象算法推演 (维度二).md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_认知维度架构.excalidraw.md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_双维联动生命周期.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/01_模块架构全景白板 (Excalidraw).md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_文法解析与编译流水线.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/06_工业级工程准则与下一阶段导引 (衔接下一阶段).md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/05_实战靶场、命令行探针与代码实验 (维度四).md",
     "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语法语义.md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_双维交织方法论.excalidraw.md",
@@ -251,7 +254,6 @@
     "Areas/前端体系/01_Core Language/ECMAScript/ECMAScript_认知维度架构.excalidraw.md",
     "Areas/前端体系/前端体系脑图.md",
     "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
-    "Home.md",
     "Areas/心智模式/利用AI快速掌握编程语言.md",
     "Areas/Python 体系/Python/09_Package Managers/uv 管理器.md",
     "Areas/心智模式",
@@ -259,8 +261,6 @@
     "Areas/Python 体系/Python-Plan/Week 1 实战.md",
     "Areas/前端体系/前端AI转型.md",
     "Areas/前端体系/体系数据库.base",
-    "Areas/前端体系/体系看板.md",
-    "Areas/Rust体系/Rust体系脑图.md",
     "Areas/前端体系/06_CS Fundamentals/06.4_技术领导与ROI",
     "Areas/前端体系/06_CS Fundamentals/06.3_系统架构设计模式",
     "Areas/前端体系/06_CS Fundamentals/06.2_数据结构与算法",
