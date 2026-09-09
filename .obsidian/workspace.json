@@ -4,35 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "ace15b563a7d8f1a",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "95680819f494076f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "html-gallery-view",
               "state": {
-                "file": "Projects/AI-System-Study/01_LLM_Foundations.md",
-                "mode": "source",
-                "source": false
+                "folder": ""
               },
-              "icon": "lucide-file",
-              "title": "01_LLM_Foundations"
+              "icon": "html-gallery",
+              "title": "HTML Gallery"
             }
           },
           {
-            "id": "a4e1169744f93cbb",
+            "id": "f33b10540dce1fed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域 (维度一).md",
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/01_源码解码与字符正规化.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_开发者认知心智与工程问题域 (维度一)"
+              "title": "01_源码解码与字符正规化"
             }
           }
         ],
@@ -95,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 395.28125
+    "width": 421.125
   },
   "right": {
     "id": "ac92377ccf211e5a",
@@ -178,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域 (维度一).md",
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/01_源码解码与字符正规化.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -205,7 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 401.765625
+    "width": 277.37890625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,17 +224,42 @@
       "tasknotes:Open kanban board": false,
       "tasknotes:Open pomodoro": false,
       "tasknotes:Open pomodoro stats": false,
-      "tasknotes:Create new task": false
+      "tasknotes:Create new task": false,
+      "html-gallery:Open HTML Gallery": false
     }
   },
-  "active": "a4e1169744f93cbb",
+  "active": "f33b10540dce1fed",
   "lastOpenFiles": [
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/03_规范核心条款与抽象算法推演 (维度二).md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域 (维度一).md",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/animations/source_decoding_pipeline.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/animations/source_decoding_pipeline.gif",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/5a6571e2b587d6d1.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/4d37b6480bb32fde.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/3a6be6609cc943c1.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/source_decoding_pipeline.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/00_心智与工程模型全览.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/partial_movie_file_list.txt",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_170846798_1782228245.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_1148413470_940671844.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_3383942168_3195894868.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/b1c73f1233483972_.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/b1c73f1233483972.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/e90cbf114f8ace21_.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/4081d5b56b29e130_.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/f759e882f9d6d265_.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/27b810295068002b_.svg",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_125152860_1129005175.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_3137316843_3179393189.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_4134205473_2871689381.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_924441967_632887380.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/01_源码解码与字符正规化.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/表达式.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_源码解码与字符正规化流水线.excalidraw.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/01_模块架构全景白板 (Excalidraw).md",
     "Home.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/03_规范核心条款与抽象算法推演 (维度二).md",
     "Projects/AI-System-Study/01_LLM_Foundations.md",
     "Resources/Excalidraw/2026学习进度表.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/01_模块架构全景白板 (Excalidraw).md",
     "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/04_现代引擎物理实现 (维度三).md",
     "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/05_实战靶场、命令行探针与代码实验 (维度四).md",
     "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/06_工业级工程准则与下一阶段导引 (衔接下一阶段).md",
@@ -245,31 +268,13 @@
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_认知维度架构.excalidraw.md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_双维联动生命周期.excalidraw.md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_文法解析与编译流水线.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线",
     "Areas/前端体系/01_Core Language/ECMAScript/核心语法语义.md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_双维交织方法论.excalidraw.md",
     "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_引擎实现维度.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw",
     "Areas/前端体系/01_Core Language/ECMAScript/ECMAScript_引擎实现维度.excalidraw.md",
     "Areas/前端体系/01_Core Language/ECMAScript/ECMAScript_认知维度架构.excalidraw.md",
     "Areas/前端体系/前端体系脑图.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
     "Areas/心智模式/利用AI快速掌握编程语言.md",
-    "Areas/Python 体系/Python/09_Package Managers/uv 管理器.md",
-    "Areas/心智模式",
-    "Areas/Python 体系/Python/01_Learn the Basics/Python Basics.md",
-    "Areas/Python 体系/Python-Plan/Week 1 实战.md",
-    "Areas/前端体系/前端AI转型.md",
-    "Areas/前端体系/体系数据库.base",
-    "Areas/前端体系/06_CS Fundamentals/06.4_技术领导与ROI",
-    "Areas/前端体系/06_CS Fundamentals/06.3_系统架构设计模式",
-    "Areas/前端体系/06_CS Fundamentals/06.2_数据结构与算法",
-    "Areas/前端体系/06_CS Fundamentals/06.1_计算机网络协议",
-    "Areas/前端体系/06_CS Fundamentals",
-    "Pasted image 20260728133631.png",
-    "Pasted image 20260728115431.png",
-    "Pasted image 20260728114828.png",
-    "Projects/Dex-Grid-Trading",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }

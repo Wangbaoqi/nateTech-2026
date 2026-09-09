@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>ECMAScript SourceCharacter 解码流水线动图演示</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(99, 102, 241, 0.2), inset 0 0 15px rgba(99, 102, 241, 0.1); }
+      50% { box-shadow: 0 0 25px rgba(99, 102, 241, 0.4), inset 0 0 25px rgba(99, 102, 241, 0.2); }
+    }
+    @keyframes flow-dots {
+      0% { background-position: 0 0; }
+      100% { background-position: 40px 0; }
+    }
+    .active-step-glow {
+      animation: pulse-glow 2s infinite ease-in-out;
+    }
+    .flow-line-active {
+      background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899);
+      background-size: 200% 100%;
+      animation: flow-dots 1.5s linear infinite;
+    }
+    .byte-tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="bg-transparent text-[var(--foreground)] antialiased p-3 md:p-6 font-sans">
+  <div class="max-w-5xl mx-auto bg-[var(--card)] border border-[var(--border)] rounded-2xl shadow-xl overflow-hidden">
+    
+    <!-- 顶部控制条与标题 -->
+    <div class="px-6 py-5 border-b border-[var(--border)] bg-[var(--card)]/50 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">
+            ECMA-262 Clause 11
+          </span>
+          <h2 class="text-xl font-bold tracking-tight text-[var(--foreground)]">源码解码与 SourceCharacter 流转换流水线</h2>
+        </div>
+        <p class="text-xs md:text-sm text-[var(--muted-foreground)] mt-1">
+          现代宿主环境（浏览器 / V8）从原始二进制字节到规范字符流的逐帧动态演绎
+        </p>
+      </div>
+
+      <!-- 交互控制面板 -->
+      <div class="flex items-center gap-2">
+        <button id="btn-prev" class="px-3 py-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--border)]/50 text-xs font-medium transition-colors flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          上一步
+        </button>
+        <button id="btn-play" class="px-4 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-sm transition-colors flex items-center gap-1.5">
+          <span id="play-icon">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </span>
+          <span id="play-text">自动播放</span>
+        </button>
+        <button id="btn-next" class="px-3 py-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--border)]/50 text-xs font-medium transition-colors flex items-center gap-1">
+          下一步
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <button id="btn-reset" class="px-2.5 py-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--border)]/50 text-xs text-[var(--muted-foreground)] transition-colors" title="重置回第一步">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 演示用例切换器 -->
+    <div class="px-6 py-2.5 bg-[var(--background)]/40 border-b border-[var(--border)] flex items-center justify-between gap-2 overflow-x-auto text-xs">
+      <span class="text-[var(--muted-foreground)] shrink-0 font-medium">典型场景测试：</span>
+      <div class="flex items-center gap-1.5">
+        <button class="preset-btn px-2.5 py-1 rounded border border-indigo-500/30 bg-indigo-500/10 text-indigo-500 font-medium" data-preset="surrogate">
+          用例1: 生僻字与CRLF换行 (`"𠮷"`)
+        </button>
+        <button class="preset-btn px-2.5 py-1 rounded border border-[var(--border)] hover:bg-[var(--border)]/30 text-[var(--muted-foreground)] font-medium" data-preset="emoji">
+          用例2: 复合Emoji (`"👨‍👩‍👧‍👦"`)
+        </button>
+        <button class="preset-btn px-2.5 py-1 rounded border border-[var(--border)] hover:bg-[var(--border)]/30 text-[var(--muted-foreground)] font-medium" data-preset="hashbang">
+          用例3: Hashbang解释器行 (`#!/node`)
+        </button>
+      </div>
+    </div>
+
+    <!-- 步骤进度指示器 (Steppers) -->
+    <div class="px-6 py-4 border-b border-[var(--border)] bg-[var(--card)]">
+      <div class="grid grid-cols-6 gap-2 text-center text-xs">
+        <div class="step-item p-2 rounded-lg cursor-pointer transition-all border border-indigo-500/40 bg-indigo-500/10 font-bold text-indigo-500" data-step="0">
+          <div class="text-[10px] opacity-75">STEP 1</div>
+          <div class="truncate">二进制输入</div>
+        </div>
+        <div class="step-item p-2 rounded-lg cursor-pointer transition-all border border-transparent opacity-60 hover:opacity-100" data-step="1">
+          <div class="text-[10px] opacity-75">STEP 2</div>
+          <div class="truncate">BOM 探测</div>
+        </div>
+        <div class="step-item p-2 rounded-lg cursor-pointer transition-all border border-transparent opacity-60 hover:opacity-100" data-step="2">
+          <div class="text-[10px] opacity-75">STEP 3</div>
+          <div class="truncate">UTF-8 解码</div>
+        </div>
+        <div class="step-item p-2 rounded-lg cursor-pointer transition-all border border-transparent opacity-60 hover:opacity-100" data-step="3">
+          <div class="text-[10px] opacity-75">STEP 4</div>
+          <div class="truncate">换行正规化</div>
+        </div>
+        <div class="step-item p-2 rounded-lg cursor-pointer transition-all border border-transparent opacity-60 hover:opacity-100" data-step="4">
+          <div class="text-[10px] opacity-75">STEP 5</div>
+          <div class="truncate">字符流聚合</div>
+        </div>
+        <div class="step-item p-2 rounded-lg cursor-pointer transition-all border border-transparent opacity-60 hover:opacity-100" data-step="5">
+          <div class="text-[10px] opacity-75">STEP 6</div>
+          <div class="truncate">交付编译前端</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主展示舞台 (Stage Area) -->
+    <div class="p-6 space-y-6">
+      
+      <!-- 动态标题与状态描述框 -->
+      <div class="p-4 rounded-xl border border-indigo-500/30 bg-gradient-to-r from-indigo-500/5 via-purple-500/5 to-transparent flex items-start gap-3">
+        <div class="p-2 rounded-lg bg-indigo-500/20 text-indigo-500 shrink-0 mt-0.5" id="stage-icon">
+          <!-- 动态图标 -->
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <div>
+          <h3 id="stage-title" class="font-bold text-base text-[var(--foreground)]">步骤 1：原始物理二进制流流入宿主缓冲区</h3>
+          <p id="stage-desc" class="text-xs md:text-sm text-[var(--muted-foreground)] mt-1">
+            源文件以纯粹的字节流形式从网络（HTTP Response）或磁盘（文件系统）加载到宿主环境内存缓冲区中。
+          </p>
+        </div>
+      </div>
+
+      <!-- 核心可视化数据流动区域 (Data Stream Visualizer) -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        
+        <!-- 左侧：字节流 / 码点流展示板 -->
+        <div class="lg:col-span-2 space-y-3">
+          <div class="flex items-center justify-between text-xs font-semibold text-[var(--muted-foreground)]">
+            <span id="stream-label">当前流状态：原始字节序列 (Hexadecimal Bytes)</span>
+            <span id="byte-counter" class="font-mono">共 24 字节</span>
+          </div>
+
+          <div id="stream-container" class="min-h-[160px] p-4 rounded-xl bg-[var(--background)] border border-[var(--border)] flex flex-wrap content-start gap-2 overflow-y-auto max-h-[260px] font-mono">
+            <!-- 动态生成的字节/字符胶囊 -->
+          </div>
+
+          <!-- 重点推导高亮卡片 -->
+          <div id="detail-card" class="p-4 rounded-xl border border-[var(--border)] bg-[var(--card)] text-xs space-y-2">
+            <!-- 动态内容 -->
+          </div>
+        </div>
+
+        <!-- 右侧：规范原语与引擎内部状态机仪表盘 -->
+        <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--background)]/70 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)] flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            引擎底层规范观测台
+          </h4>
+
+          <div class="space-y-3 text-xs">
+            <div>
+              <div class="text-[var(--muted-foreground)]">当前执行抽象操作：</div>
+              <div id="stat-op" class="font-mono font-semibold text-indigo-400 mt-0.5">HostEnsureSourceText()</div>
+            </div>
+
+            <div>
+              <div class="text-[var(--muted-foreground)]">识别编码格式 (Encoding)：</div>
+              <div id="stat-encoding" class="font-mono font-bold text-emerald-400 mt-0.5">未探测 (Pending)</div>
+            </div>
+
+            <div>
+              <div class="text-[var(--muted-foreground)]">换行规范化策略：</div>
+              <div id="stat-crlf" class="font-mono text-[var(--foreground)] mt-0.5">等待解析换行符序列</div>
+            </div>
+
+            <div>
+              <div class="text-[var(--muted-foreground)]">SourceCharacter 计数：</div>
+              <div id="stat-char-count" class="font-mono text-base font-bold text-indigo-400 mt-0.5">0 字符</div>
+            </div>
+
+            <div class="pt-2 border-t border-[var(--border)]">
+              <div class="text-[var(--muted-foreground)]">下一阶段交接接口：</div>
+              <div class="font-mono text-amber-400 font-semibold mt-0.5 text-[11px]">
+                ParseText(sourceText, Script)
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 底部状态指示栏 -->
+    <div class="px-6 py-3 bg-[var(--background)]/80 border-t border-[var(--border)] flex items-center justify-between text-xs text-[var(--muted-foreground)]">
+      <div>💡 核心心智：无论外部输入是何种字节编码，一旦越过 Stage 5，引擎眼中的世界只剩下纯粹的 <code>SourceCharacter</code> 码点流。</div>
+      <div class="font-mono" id="playback-speed">1.0x 正常速度</div>
+    </div>
+
+  </div>
+
+  <script>
+    // 预设测试用例数据
+    const PRESETS = {
+      surrogate: {
+        name: '生僻字与CRLF换行 ("𠮷")',
+        rawBytes: [
+          { hex: 'EF', type: 'bom' }, { hex: 'BB', type: 'bom' }, { hex: 'BF', type: 'bom' },
+          { hex: '63', char: 'c', cp: 0x63, type: 'ascii' },
+          { hex: '3D', char: '=', cp: 0x3D, type: 'ascii' },
+          { hex: '22', char: '"', cp: 0x22, type: 'ascii' },
+          { hex: 'F0', type: 'astral_lead' }, { hex: 'A0', type: 'astral_trail' }, { hex: 'AE', type: 'astral_trail' }, { hex: 'B7', type: 'astral_trail', char: '𠮷', cp: 0x20BB7 },
+          { hex: '22', char: '"', cp: 0x22, type: 'ascii' },
+          { hex: '3B', char: ';', cp: 0x3B, type: 'ascii' },
+          { hex: '0D', char: '\\r', cp: 0x0D, type: 'cr' },
+          { hex: '0A', char: '\\n', cp: 0x0A, type: 'lf' }
+        ],
+        codePoints: [
+          { cp: 'U+0063', char: 'c', desc: 'ASCII 字符' },
+          { cp: 'U+003D', char: '=', desc: 'ASCII 符号' },
+          { cp: 'U+0022', char: '"', desc: '双引号' },
+          { cp: 'U+20BB7', char: '𠮷', desc: '辅助平面生僻字 (4字节解码完成)' },
+          { cp: 'U+0022', char: '"', desc: '双引号' },
+          { cp: 'U+003B', char: ';', desc: '分号' },
+          { cp: 'U+000A', char: '<LF>', desc: 'CRLF 正规化为单一换行' }
+        ]
+      },
+      emoji: {
+        name: '复合Emoji ("👨‍👩‍👧‍👦")',
+        rawBytes: [
+          { hex: 'EF', type: 'bom' }, { hex: 'BB', type: 'bom' }, { hex: 'BF', type: 'bom' },
+          { hex: 'F0', type: 'emoji' }, { hex: '9F', type: 'emoji' }, { hex: '91', type: 'emoji' }, { hex: 'A8', char: '👨', cp: 0x1F468, type: 'emoji' },
+          { hex: 'E2', type: 'zwj' }, { hex: '80', type: 'zwj' }, { hex: '8D', char: 'ZWJ', cp: 0x200D, type: 'zwj' },
+          { hex: 'F0', type: 'emoji' }, { hex: '9F', type: 'emoji' }, { hex: '91', type: 'emoji' }, { hex: 'A9', char: '👩', cp: 0x1F469, type: 'emoji' }
+        ],
+        codePoints: [
+          { cp: 'U+1F468', char: '👨', desc: '男人 Emoji' },
+          { cp: 'U+200D', char: '<ZWJ>', desc: '零宽连字符 (Zero Width Joiner)' },
+          { cp: 'U+1F469', char: '👩', desc: '女人 Emoji' }
+        ]
+      },
+      hashbang: {
+        name: 'Hashbang解释器行 (#!/node)',
+        rawBytes: [
+          { hex: '23', char: '#', cp: 0x23, type: 'hashbang' },
+          { hex: '21', char: '!', cp: 0x21, type: 'hashbang' },
+          { hex: '2F', char: '/', cp: 0x2F, type: 'hashbang' },
+          { hex: '6E', char: 'n', cp: 0x6E, type: 'hashbang' },
+          { hex: '0A', char: '\\n', cp: 0x0A, type: 'lf' },
+          { hex: '6C', char: 'l', cp: 0x6C, type: 'ascii' }
+        ],
+        codePoints: [
+          { cp: 'U+0023', char: '#', desc: 'Hashbang 首字符' },
+          { cp: 'U+0021', char: '!', desc: 'Hashbang 标志' },
+          { cp: 'U+002F', char: '/', desc: '斜杠' },
+          { cp: 'U+006E', char: 'n', desc: '字母 n' },
+          { cp: 'U+000A', char: '<LF>', desc: '首行换行' },
+          { cp: 'U+006C', char: 'l', desc: '代码语句首字母' }
+        ]
+      }
+    };
+
+    // 步骤详情定义
+    const STAGE_CONFIGS = [
+      {
+        title: "步骤 1：原始物理二进制流流入宿主缓冲区",
+        desc: "文件从磁盘或网络被加载为原始字节流（Raw Octets）。此时在物理内存中没有任何字符概念，只有一串无差别的 16 进制字节。",
+        op: "HostLoadSourceBytes()",
+        encoding: "未探测 (Raw Bytes)",
+        crlf: "包含物理换行原始字节",
+        charCount: "0 (尚未解码)",
+        detailHtml: `
+          <div class="font-bold text-indigo-400">🔍 物理字节检视：</div>
+          <div class="text-[var(--muted-foreground)]">每个方块代表物理内存中的一个 8-bit 字节（Octet）。例如 <code>EF BB BF</code> 是常见 UTF-8 BOM 头，<code>F0 A0 AE B7</code> 则是生僻字 '𠮷' 的 4 字节 UTF-8 编码。</div>
+        `
+      },
+      {
+        title: "步骤 2：BOM 探测与编码判定（Encoding Sniffing）",
+        desc: "宿主解码器检查前导字节。发现 0xEF, 0xBB, 0xBF 匹配 UTF-8 签名，确认编码为 UTF-8，并将 BOM 头安全剥离！",
+        op: "HostDetectEncodingAndStripBOM()",
+        encoding: "UTF-8 (签名匹配成功，BOM已剥离)",
+        crlf: "保留在数据流中",
+        charCount: "0 (BOM 剥离完毕)",
+        detailHtml: `
+          <div class="font-bold text-emerald-400">✂️ BOM 签名拦截成功：</div>
+          <div class="text-[var(--muted-foreground)]">检测到前 3 个字节为 <code>0xEF, 0xBB, 0xBF</code>。宿主将其识别为 UTF-8 Byte Order Mark。依据规范，BOM **绝对不能** 泄露给后续词法分析器，必须在解码前物理切除！</div>
+        `
+      },
+      {
+        title: "步骤 3：UTF-8 多字节状态机解码为 Unicode 码点",
+        desc: "解码器使用有限状态机，将变长 UTF-8 字节（1~4字节）组装为完整的 Unicode 码点。辅助平面字符在此阶段被合并为单一码点！",
+        op: "UTF8DecodeToCodePoints()",
+        encoding: "UTF-8 解码为 Code Points 成功",
+        crlf: "正在处理 CRLF",
+        charCount: "解码生成 Unicode 标量序列",
+        detailHtml: `
+          <div class="font-bold text-purple-400">⚡ 生僻字 '𠮷' 解码位运算推导：</div>
+          <div class="font-mono text-[11px] p-2 rounded bg-black/20 text-purple-300">
+            UTF-8: F0 A0 AE B7 <br>
+            二进制: [11110000] [10100000] [10101110] [10110111]<br>
+            提取有效位: 000 100000 101110 110111<br>
+            计算码点值: 0x20BB7 (十进制 134071，完全属于辅助平面！)
+          </div>
+        `
+      },
+      {
+        title: "步骤 4：行终止符规范化（CRLF 折叠）与行列号映射",
+        desc: "依据 Clause 11.2，Windows 风格的 \\r\\n (CRLF) 在此步被正规化折叠为单一逻辑换行符 <LF>，防止源码行列号发生跨平台漂移！",
+        op: "NormalizeLineTerminators()",
+        encoding: "UTF-8",
+        crlf: "CRLF (\\r\\n) 成功折叠为单一 <LF> (0x0A)",
+        charCount: "规整字符流",
+        detailHtml: `
+          <div class="font-bold text-amber-400">📏 行列号映射表更新 (Source Map Index)：</div>
+          <div class="text-[var(--muted-foreground)]">物理上的 <code>0x0D 0x0A</code> 占用 2 个字节，但在规范语义中折叠为一个逻辑换行符。行号自增：<code>Line 1 -> Line 2, Col: 1</code>。</div>
+        `
+      },
+      {
+        title: "步骤 5：构建符合规范的 SourceCharacter 连续流",
+        desc: "所有物理字节和编码差异被彻底消除，输出纯净的 SourceCharacter 序列（每个单元都是合法的 Unicode Code Point，范围 0x0 ~ 0x10FFFF）。",
+        op: "FormSourceCharacterStream()",
+        encoding: "已升华为纯粹 Unicode Code Point",
+        crlf: "正规化完成",
+        charCount: "完整生成标准 SourceCharacter 流",
+        detailHtml: `
+          <div class="font-bold text-indigo-400">🌟 关键认知里程碑：</div>
+          <div class="text-[var(--muted-foreground)]">注意：在 <code>SourceCharacter</code> 流中，生僻字 <strong>'𠮷' 是单一且完整的 <code>U+20BB7</code> 码点</strong>，尚未拆分为 UTF-16 代理对（Surrogate Pair）。这正是规范层与物理运行时的分水岭！</div>
+        `
+      },
+      {
+        title: "步骤 6：无缝交付编译前端入口操作 ParseText()",
+        desc: "标准的 SourceCharacter 流被整体移交给编译器入口抽象操作 ParseText(sourceText, Script)，词法分析器（Scanner）正式启动分词！",
+        op: "ParseText(sourceText, goalSymbol)",
+        encoding: "Compiler Ingestion Ready",
+        crlf: "就绪",
+        charCount: "交付词法分析器 (Scanner)",
+        detailHtml: `
+          <div class="font-bold text-emerald-400">🚀 编译前端接棒运转：</div>
+          <div class="text-[var(--muted-foreground)]">Scanner 读取 <code>SourceCharacter</code> 流，开始生成 Token（<code>const</code>, <code>s</code>, <code>=</code>, <code>"𠮷"</code>, <code>;</code>），静态编译期正式进入 Phase 2（语法树构建与 Early Errors 校验）！</div>
+        `
+      }
+    ];
+
+    let currentPreset = 'surrogate';
+    let currentStep = 0;
+    let isPlaying = false;
+    let timer = null;
+
+    // DOM 元素引用
+    const streamContainer = document.getElementById('stream-container');
+    const stageTitle = document.getElementById('stage-title');
+    const stageDesc = document.getElementById('stage-desc');
+    const detailCard = document.getElementById('detail-card');
+    const statOp = document.getElementById('stat-op');
+    const statEncoding = document.getElementById('stat-encoding');
+    const statCrlf = document.getElementById('stat-crlf');
+    const statCharCount = document.getElementById('stat-char-count');
+    const streamLabel = document.getElementById('stream-label');
+    const byteCounter = document.getElementById('byte-counter');
+    const btnPlay = document.getElementById('btn-play');
+    const playIcon = document.getElementById('play-icon');
+    const playText = document.getElementById('play-text');
+
+    // 渲染当前步骤
+    function renderStep(stepIndex) {
+      currentStep = stepIndex;
+      const data = PRESETS[currentPreset];
+      const cfg = STAGE_CONFIGS[stepIndex];
+
+      // 更新步骤条高亮
+      document.querySelectorAll('.step-item').forEach((el, idx) => {
+        if (idx === stepIndex) {
+          el.className = 'step-item p-2 rounded-lg cursor-pointer transition-all border border-indigo-500/60 bg-indigo-500/20 font-bold text-indigo-400 active-step-glow';
+        } else if (idx < stepIndex) {
+          el.className = 'step-item p-2 rounded-lg cursor-pointer transition-all border border-emerald-500/30 bg-emerald-500/5 text-emerald-400';
+        } else {
+          el.className = 'step-item p-2 rounded-lg cursor-pointer transition-all border border-transparent opacity-60 hover:opacity-100';
+        }
+      });
+
+      // 更新仪表盘文字
+      stageTitle.innerText = cfg.title;
+      stageDesc.innerText = cfg.desc;
+      statOp.innerText = cfg.op;
+      statEncoding.innerText = cfg.encoding;
+      statCrlf.innerText = cfg.crlf;
+      detailCard.innerHTML = cfg.detailHtml;
+
+      // 渲染核心流数据容器
+      streamContainer.innerHTML = '';
+
+      if (stepIndex === 0) {
+        // Step 1: 纯原始字节
+        streamLabel.innerText = "当前流状态：原始物理字节 (Raw Bytes)";
+        byteCounter.innerText = `共 ${data.rawBytes.length} 字节`;
+        data.rawBytes.forEach((b, idx) => {
+          const el = document.createElement('div');
+          el.className = 'byte-tag px-2.5 py-1.5 rounded-md border border-[var(--border)] bg-[var(--card)] text-xs flex flex-col items-center justify-center';
+          el.innerHTML = `
+            <span class="text-indigo-400 font-bold">${b.hex}</span>
+            <span class="text-[9px] text-[var(--muted-foreground)]">0x${idx.toString(16).padStart(2,'0')}</span>
+          `;
+          streamContainer.appendChild(el);
+        });
+      } else if (stepIndex === 1) {
+        // Step 2: 标记剥离 BOM
+        streamLabel.innerText = "当前流状态：BOM 探测与切除";
+        byteCounter.innerText = `BOM 剥离后剩余 ${data.rawBytes.filter(b=>b.type!=='bom').length} 字节`;
+        data.rawBytes.forEach((b, idx) => {
+          const isBom = b.type === 'bom';
+          const el = document.createElement('div');
+          if (isBom) {
+            el.className = 'byte-tag px-2.5 py-1.5 rounded-md border border-red-500/50 bg-red-500/10 text-xs flex flex-col items-center justify-center opacity-40 line-through';
+            el.innerHTML = `
+              <span class="text-red-400 font-bold">${b.hex}</span>
+              <span class="text-[9px] text-red-300">BOM 剔除</span>
+            `;
+          } else {
+            el.className = 'byte-tag px-2.5 py-1.5 rounded-md border border-emerald-500/50 bg-emerald-500/10 text-xs flex flex-col items-center justify-center';
+            el.innerHTML = `
+              <span class="text-emerald-400 font-bold">${b.hex}</span>
+              <span class="text-[9px] text-emerald-300">有效载荷</span>
+            `;
+          }
+          streamContainer.appendChild(el);
+        });
+      } else if (stepIndex === 2) {
+        // Step 3: UTF-8 组装
+        streamLabel.innerText = "当前流状态：UTF-8 组装为码点 (Code Points)";
+        byteCounter.innerText = "正在多字节合并...";
+        data.codePoints.forEach(cp => {
+          const el = document.createElement('div');
+          el.className = 'byte-tag px-3 py-2 rounded-lg border border-purple-500/40 bg-purple-500/10 text-xs flex flex-col items-center justify-center';
+          el.innerHTML = `
+            <span class="text-purple-300 font-bold text-sm">${cp.char}</span>
+            <span class="text-[10px] text-purple-400 font-mono">${cp.cp}</span>
+          `;
+          streamContainer.appendChild(el);
+        });
+      } else if (stepIndex === 3) {
+        // Step 4: 换行正规化
+        streamLabel.innerText = "当前流状态：LineTerminators 换行折叠";
+        byteCounter.innerText = "CRLF -> <LF> 规整完毕";
+        data.codePoints.forEach(cp => {
+          const isLf = cp.char === '<LF>';
+          const el = document.createElement('div');
+          if (isLf) {
+            el.className = 'byte-tag px-3 py-2 rounded-lg border border-amber-500/60 bg-amber-500/20 text-xs flex flex-col items-center justify-center animate-pulse';
+            el.innerHTML = `
+              <span class="text-amber-300 font-bold text-sm">\\n</span>
+              <span class="text-[9px] text-amber-200">单一换行 (Line 2)</span>
+            `;
+          } else {
+            el.className = 'byte-tag px-3 py-2 rounded-lg border border-[var(--border)] bg-[var(--card)] text-xs flex flex-col items-center justify-center';
+            el.innerHTML = `
+              <span class="text-[var(--foreground)] font-bold text-sm">${cp.char}</span>
+              <span class="text-[10px] text-[var(--muted-foreground)] font-mono">${cp.cp}</span>
+            `;
+          }
+          streamContainer.appendChild(el);
+        });
+      } else if (stepIndex === 4 || stepIndex === 5) {
+        // Step 5 & 6: 纯净的 SourceCharacter 连续流
+        streamLabel.innerText = stepIndex === 4 ? "当前流状态：纯净 SourceCharacter 序列" : "编译前端交接：进入 ParseText()";
+        statCharCount.innerText = `${data.codePoints.length} 码点字符`;
+        data.codePoints.forEach((cp, idx) => {
+          const el = document.createElement('div');
+          const isSpecial = cp.char === '𠮷' || cp.char === '👨';
+          el.className = `byte-tag px-3 py-2.5 rounded-xl border text-xs flex flex-col items-center justify-center shadow-sm ${
+            isSpecial 
+              ? 'border-indigo-500 bg-indigo-500/20 text-indigo-300 scale-105 ring-2 ring-indigo-500/30' 
+              : 'border-[var(--border)] bg-[var(--card)] text-[var(--foreground)]'
+          }`;
+          el.innerHTML = `
+            <span class="font-bold text-base">${cp.char}</span>
+            <span class="text-[10px] font-mono opacity-80">${cp.cp}</span>
+            <span class="text-[9px] text-[var(--muted-foreground)] mt-0.5">#${idx + 1}</span>
+          `;
+          streamContainer.appendChild(el);
+        });
+      }
+    }
+
+    // 播放循环调度
+    function togglePlay() {
+      if (isPlaying) {
+        clearInterval(timer);
+        isPlaying = false;
+        playText.innerText = "自动播放";
+        playIcon.innerHTML = `<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>`;
+      } else {
+        isPlaying = true;
+        playText.innerText = "暂停播放";
+        playIcon.innerHTML = `<svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+        timer = setInterval(() => {
+          if (currentStep < 5) {
+            renderStep(currentStep + 1);
+          } else {
+            renderStep(0);
+          }
+        }, 2200);
+      }
+    }
+
+    // 事件绑定
+    document.getElementById('btn-prev').addEventListener('click', () => {
+      if (currentStep > 0) renderStep(currentStep - 1);
+    });
+    document.getElementById('btn-next').addEventListener('click', () => {
+      if (currentStep < 5) renderStep(currentStep + 1);
+    });
+    document.getElementById('btn-reset').addEventListener('click', () => {
+      renderStep(0);
+    });
+    btnPlay.addEventListener('click', togglePlay);
+
+    // 步骤按钮点击
+    document.querySelectorAll('.step-item').forEach(el => {
+      el.addEventListener('click', () => {
+        const step = parseInt(el.getAttribute('data-step'), 10);
+        renderStep(step);
+      });
+    });
+
+    // 预设切换
+    document.querySelectorAll('.preset-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.preset-btn').forEach(b => {
+          b.className = 'preset-btn px-2.5 py-1 rounded border border-[var(--border)] hover:bg-[var(--border)]/30 text-[var(--muted-foreground)] font-medium';
+        });
+        btn.className = 'preset-btn px-2.5 py-1 rounded border border-indigo-500/30 bg-indigo-500/10 text-indigo-500 font-medium';
+        currentPreset = btn.getAttribute('data-preset');
+        renderStep(0);
+      });
+    });
+
+    // 初始化渲染
+    renderStep(0);
+  </script>
+</body>
+</html>
