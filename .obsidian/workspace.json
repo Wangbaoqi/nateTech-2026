@@ -4,33 +4,70 @@
     "type": "split",
     "children": [
       {
-        "id": "ace15b563a7d8f1a",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "95680819f494076f",
-            "type": "leaf",
-            "state": {
-              "type": "html-gallery-view",
-              "state": {
-                "folder": ""
-              },
-              "icon": "html-gallery",
-              "title": "HTML Gallery"
-            }
-          },
-          {
-            "id": "f33b10540dce1fed",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/01_源码解码与字符正规化.md",
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day14_综合复习与V8性能优化/01_使用维度.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_源码解码与字符正规化"
+              "title": "01_使用维度"
+            }
+          },
+          {
+            "id": "26ece098a8824bbb",
+            "type": "leaf",
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Resources/Task-Views/calendar-default.base",
+                "viewName": "Calendar"
+              },
+              "icon": "tasknotes-simple",
+              "title": "calendar-default"
+            }
+          },
+          {
+            "id": "d287669a144655f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Areas/前端体系/前端AI转型.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "前端AI转型"
+            }
+          },
+          {
+            "id": "ccb4a136d267d206",
+            "type": "leaf",
+            "state": {
+              "type": "tasknotes-release-notes",
+              "state": {},
+              "icon": "book-open",
+              "title": "TaskNotes 4.13.1 的新功能"
+            }
+          },
+          {
+            "id": "5b957cd0dfda4e4d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_认知维度架构.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "ECMAScript_认知维度架构.excalidraw"
             }
           }
         ],
@@ -93,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 421.125
+    "width": 360.1328125
   },
   "right": {
     "id": "ac92377ccf211e5a",
@@ -176,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/01_源码解码与字符正规化.md",
+                "file": "Resources/Task-Views/calendar-default.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -203,7 +240,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277.37890625
+    "width": 261.4921875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,56 +262,65 @@
       "tasknotes:Open pomodoro": false,
       "tasknotes:Open pomodoro stats": false,
       "tasknotes:Create new task": false,
-      "html-gallery:Open HTML Gallery": false
+      "html-gallery:Open HTML Gallery": false,
+      "tasknotes:打开迷你日历视图": false,
+      "tasknotes:打开日历视图": false,
+      "tasknotes:打开任务视图": false,
+      "tasknotes:打开议程视图": false,
+      "tasknotes:打开看板": false,
+      "tasknotes:打开番茄钟计时器": false,
+      "tasknotes:打开番茄钟统计": false,
+      "tasknotes:创建新任务": false
     }
   },
-  "active": "f33b10540dce1fed",
+  "active": "26ece098a8824bbb",
   "lastOpenFiles": [
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/animations/source_decoding_pipeline.mp4",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day14-综合复习与V8性能优化.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day13-内存管理与弱引用.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day12-元编程-Proxy-Reflect-Symbol.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day11-ESM模块系统.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day10-async-await与事件循环.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day09-Promise规范与微任务.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day08-this绑定机制与严格模式.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day07-函数系统深度解析.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day06-原型链与对象内部方法.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day05-形式文法与词法分析-ASI.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day04-作用域链与闭包-TDZ.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day03-执行上下文与环境记录.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day02-隐式转换深渊.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks/ECMAScript-Day01-类型系统全景.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Tasks",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day14_综合复习与V8性能优化/01_使用维度.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week1_语言基础与运行时模型/Day01_类型系统全景/02_底层分析.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week1_语言基础与运行时模型/Day01_类型系统全景/01_使用维度.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/00_学习计划总览.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/generate_docs.py",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day14_综合复习与V8性能优化/03_实战面试题.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day14_综合复习与V8性能优化/02_底层分析.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day13_内存管理与弱引用/01_使用维度.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day13_内存管理与弱引用/03_实战面试题.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day13_内存管理与弱引用/02_底层分析.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day12_元编程_Proxy_Reflect_Symbol/01_使用维度.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day12_元编程_Proxy_Reflect_Symbol/03_实战面试题.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day12_元编程_Proxy_Reflect_Symbol/02_底层分析.md",
+    "Areas/前端体系/01_Core Language/ECMAScript/scripts/manim",
+    "Areas/前端体系/01_Core Language/ECMAScript/scripts",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets/animations",
+    "Areas/前端体系/01_Core Language/ECMAScript/assets",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day14_综合复习与V8性能优化",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day13_内存管理与弱引用",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day12_元编程_Proxy_Reflect_Symbol",
+    "Areas/前端体系/01_Core Language/ECMAScript/Week2_高级特性与异步模型/Day11_ESM模块系统",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/animations/source_decoding_pipeline.gif",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/5a6571e2b587d6d1.svg",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/4d37b6480bb32fde.svg",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/3a6be6609cc943c1.svg",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/source_decoding_pipeline.mp4",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/00_心智与工程模型全览.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/partial_movie_file_list.txt",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_170846798_1782228245.mp4",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_1148413470_940671844.mp4",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_3383942168_3195894868.mp4",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/b1c73f1233483972_.svg",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/b1c73f1233483972.svg",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/e90cbf114f8ace21_.svg",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/4081d5b56b29e130_.svg",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/f759e882f9d6d265_.svg",
     "Areas/前端体系/01_Core Language/ECMAScript/assets/texts/27b810295068002b_.svg",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_125152860_1129005175.mp4",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_3137316843_3179393189.mp4",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_4134205473_2871689381.mp4",
-    "Areas/前端体系/01_Core Language/ECMAScript/assets/videos/source_decoding_pipeline/720p60/partial_movie_files/SourceDecodingPipeline/1203410589_924441967_632887380.mp4",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/02_开发者认知心智与工程问题域/01_源码解码与字符正规化.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/核心语言结构/表达式.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_源码解码与字符正规化流水线.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/01_Introduction.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/01_模块架构全景白板 (Excalidraw).md",
-    "Home.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/03_规范核心条款与抽象算法推演 (维度二).md",
-    "Projects/AI-System-Study/01_LLM_Foundations.md",
-    "Resources/Excalidraw/2026学习进度表.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/04_现代引擎物理实现 (维度三).md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/05_实战靶场、命令行探针与代码实验 (维度四).md",
-    "Areas/前端体系/01_Core Language/ECMAScript/03_形式文法与解析流水线/06_工业级工程准则与下一阶段导引 (衔接下一阶段).md",
-    "Areas/前端体系/01_Core Language/ECMAScript/02_心智模型与引擎实现规范.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_六阶学习路线规划.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_认知维度架构.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_双维联动生命周期.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_文法解析与编译流水线.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/核心语法语义.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_双维交织方法论.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/excalidraw/ECMAScript_引擎实现维度.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/ECMAScript_引擎实现维度.excalidraw.md",
-    "Areas/前端体系/01_Core Language/ECMAScript/ECMAScript_认知维度架构.excalidraw.md",
-    "Areas/前端体系/前端体系脑图.md",
-    "Areas/心智模式/利用AI快速掌握编程语言.md",
     "Areas/AI体系/AI智能体/OpenClaw/未命名.canvas"
   ]
 }
